@@ -1,0 +1,33 @@
+# OBJ Material Export by Luxion KeyShot
+
+newmtl Anodized brushed black
+Kd 0 0 0
+Ks 0 0 0
+
+newmtl Anodized brushed black #1
+Kd 0 0 0
+Ks 0.78703 0.78703 0.78703
+
+newmtl Anodized brushed black #2
+Kd 0 0 0
+Ks 0.546304 0.543191 0.543191
+
+newmtl Mold-Tech-14139
+Kd 0.120363 0.00820935 0.00820935
+Ks 1 1 1
+
+newmtl Mold-Tech-14139
+Kd 0.120363 0.00820935 0.00820935
+Ks 1 1 1
+
+newmtl Aluminum rough
+Kd 0 0 0
+Ks 0.0648203 0.0644541 0.0644541
+
+newmtl Aluminum rough
+Kd 0 0 0
+Ks 0.0648203 0.0644541 0.0644541
+
+newmtl Aluminum rough
+Kd 0 0 0
+Ks 0.0648203 0.0644541 0.0644541
