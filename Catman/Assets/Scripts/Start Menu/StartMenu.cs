@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour {
@@ -8,11 +9,11 @@ public class StartMenu : MonoBehaviour {
     public GameObject startButton;
     public GameObject optionsButton;
     public GameObject exitButton;
+    public GameObject returnButton;
 
     // Use this for initialization
     void Start()
     {
-        Debug.Log("Click");
         Time.timeScale = 1;
         Cursor.visible = true;
     }
@@ -30,7 +31,6 @@ public class StartMenu : MonoBehaviour {
 
     public void PlayOnClick()
     {
-        Debug.Log("Click");
         SceneManager.LoadScene("Level1");
     }
 
@@ -42,6 +42,24 @@ public class StartMenu : MonoBehaviour {
     public void OptionsOnClick()
     {
 
+        Debug.Log("Hiding main menu");
+        ///Hides all three buttons
+        startButton.SetActive(false);
+        optionsButton.SetActive(false);
+        exitButton.SetActive(false);
+        ///Makes these buttons visible
+        returnButton.SetActive(true);
+
+    }
+
+    public void ReturnOnClick()
+    {
+        ///Enables all three buttons below
+        startButton.SetActive(true);
+        optionsButton.SetActive(true);
+        exitButton.SetActive(true);
+        ///Hides these buttons below
+        returnButton.SetActive(false);
     }
 
 
