@@ -14,7 +14,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: d8ce3b310fe2231448caa6790766fd72
+    name: musicVol
   m_AudioMixerGroupViews:
   - guids:
     - 06fe6a6cfe2b90445abb518ed06fad62
@@ -38,7 +40,7 @@ AudioMixerGroupController:
   m_Pitch: 06902fcd00845ef4db371cabc057795e
   m_Effects:
   - {fileID: 24400004}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 3
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -78,7 +80,7 @@ AudioMixerGroupController:
   m_Pitch: 170e01c856af6f246bfd1d75ae8edc03
   m_Effects:
   - {fileID: 244937394996943380}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 8
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -95,7 +97,7 @@ AudioMixerGroupController:
   m_Pitch: f340d2633ab8f16489082c9fe244232f
   m_Effects:
   - {fileID: 244417500772564166}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 6
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
