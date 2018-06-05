@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class StartMenu : MonoBehaviour {
 
@@ -10,12 +11,15 @@ public class StartMenu : MonoBehaviour {
     public GameObject optionsButton;
     public GameObject exitButton;
     public GameObject returnButton;
+    public GameObject audioMenu;
+    public int characterStart;
 
     // Use this for initialization
     void Start()
     {
         Time.timeScale = 1;
         Cursor.visible = true;
+        characterStart = 1;
     }
 
     // Update is called once per frame
@@ -49,6 +53,7 @@ public class StartMenu : MonoBehaviour {
         exitButton.SetActive(false);
         ///Makes these buttons visible
         returnButton.SetActive(true);
+        audioMenu.SetActive(true);
 
     }
 
@@ -60,6 +65,7 @@ public class StartMenu : MonoBehaviour {
         exitButton.SetActive(true);
         ///Hides these buttons below
         returnButton.SetActive(false);
+        audioMenu.SetActive(false);
     }
 
 
