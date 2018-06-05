@@ -12,6 +12,7 @@ public class StartMenu : MonoBehaviour {
     public GameObject exitButton;
     public GameObject returnButton;
     public GameObject audioMenu;
+    public AudioMixer masterMixer;
     public int characterStart;
 
     // Use this for initialization
@@ -73,5 +74,10 @@ public class StartMenu : MonoBehaviour {
     public void ExitOnClick()
     {
         Application.Quit();
+    }
+
+    public void SetMusicLvl(float musicLvl)
+    {
+        masterMixer.SetFloat("musicVol", musicLvl);
     }
 }
