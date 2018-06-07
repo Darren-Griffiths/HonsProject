@@ -80,4 +80,9 @@ public class StartMenu : MonoBehaviour {
     {
         masterMixer.SetFloat("musicVol", musicLvl);
     }
+
+    public void SetSoundFXLvl(float sfxLvl)
+    {
+        masterMixer.SetFloat("sfxVol", sfxLvl);
+    }
 }
