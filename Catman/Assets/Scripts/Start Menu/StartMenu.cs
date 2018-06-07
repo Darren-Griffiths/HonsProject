@@ -7,6 +7,10 @@ using UnityEngine.Audio;
 
 public class StartMenu : MonoBehaviour {
 
+    public GameObject playButton;
+    public GameObject AshleyButton;
+    public GameObject DudeButton;
+    public GameObject GavinButton;
     public GameObject startButton;
     public GameObject optionsButton;
     public GameObject exitButton;
@@ -36,20 +40,36 @@ public class StartMenu : MonoBehaviour {
 
     public void PlayOnClick()
     {
-        SceneManager.LoadScene("Level1");
+        //Hides all three buttons
+        playButton.SetActive(false);
+        optionsButton.SetActive(false);
+        exitButton.SetActive(false);
+
+        //Shows These Buttons
+        AshleyButton.SetActive(true);
+        DudeButton.SetActive(true);
+        GavinButton.SetActive(true);
+        startButton.SetActive(true);
+        returnButton.SetActive(true);
+
+
+}
+
+    public void StartOnClick()
+    {
+        SceneManager.LoadScene("Level1");     
     }
 
-    /// <summary>
+
     /// This function will listen for a click on the options button and then hide everything except the background, it will then make all the options page visible without loading a new scene.
     /// This will save some file space, help the cpu out and make the game seem more smoother when navigating through settings.
-    /// </summary>
 
     public void OptionsOnClick()
     {
 
         Debug.Log("Hiding main menu");
         ///Hides all three buttons
-        startButton.SetActive(false);
+        playButton.SetActive(false);
         optionsButton.SetActive(false);
         exitButton.SetActive(false);
         ///Makes these buttons visible
@@ -58,13 +78,19 @@ public class StartMenu : MonoBehaviour {
 
     }
 
+    //Returns the main menu starting options
     public void ReturnOnClick()
     {
-        ///Enables all three buttons below
-        startButton.SetActive(true);
+        //Enables all three buttons below
+        playButton.SetActive(true);
         optionsButton.SetActive(true);
         exitButton.SetActive(true);
-        ///Hides these buttons below
+
+        //Hides these buttons below
+        AshleyButton.SetActive(false);
+        DudeButton.SetActive(false);
+        GavinButton.SetActive(false);
+        startButton.SetActive(false);
         returnButton.SetActive(false);
         audioMenu.SetActive(false);
     }
@@ -76,11 +102,13 @@ public class StartMenu : MonoBehaviour {
         Application.Quit();
     }
 
+    //Slider controls the music volume
     public void SetMusicLvl(float musicLvl)
     {
         masterMixer.SetFloat("musicVol", musicLvl);
     }
 
+    //Slider controls the sfx volume
     public void SetSoundFXLvl(float sfxLvl)
     {
         masterMixer.SetFloat("sfxVol", sfxLvl);
