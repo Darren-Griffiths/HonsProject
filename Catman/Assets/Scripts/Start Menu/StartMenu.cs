@@ -15,6 +15,8 @@ public class StartMenu : MonoBehaviour {
     public GameObject optionsButton;
     public GameObject exitButton;
     public GameObject returnButton;
+    public Color red;
+    public Color white;
     public GameObject audioMenu;
     public AudioMixer masterMixer;
     public int characterStart;
@@ -24,7 +26,7 @@ public class StartMenu : MonoBehaviour {
     {
         Time.timeScale = 1;
         Cursor.visible = true;
-        characterStart = 1;
+        characterStart = 3;
     }
 
     // Update is called once per frame
@@ -33,6 +35,24 @@ public class StartMenu : MonoBehaviour {
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+  
+
+        if (characterStart == 1)
+        
+        {
+            //ColorBlock ashCB = AshleyButton.GetComponent<Button>().colors;
+            //ashCB.normalColor = red;
+            //AshleyButton.GetComponent<Button>().colors = ashCB;
+        }
+        
+        else
+        {
+            //shleyButton.GetComponent<Image>().color = white;
+            ///     ColorBlock ashCB = AshleyButton.GetComponent<Button>().colors;
+            ///     ashCB.normalColor = white;
+            ///     AshleyButton.GetComponent<Button>().colors = ashCB;
+        }
+ 
     }
 
 
@@ -51,9 +71,26 @@ public class StartMenu : MonoBehaviour {
         GavinButton.SetActive(true);
         startButton.SetActive(true);
         returnButton.SetActive(true);
+     }
 
+    public void AshleyOnClick()
+    {
+        characterStart = 1;
+        Debug.Log(characterStart);
+    }
 
-}
+    public void DudeOnClick()
+    {
+        characterStart = 2;
+        Debug.Log(characterStart);
+    }
+
+    public void GavinOnClick()
+    {
+        characterStart = 3;
+        Debug.Log(characterStart);
+    }
+
 
     public void StartOnClick()
     {
