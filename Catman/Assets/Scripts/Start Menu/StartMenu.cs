@@ -77,19 +77,25 @@ public class StartMenu : MonoBehaviour {
     public void AshleyOnClick()
     {
         settingsScript.characterStart = 1;
+        settingsScript.chances = 8;
         Debug.Log(settingsScript.characterStart);
+        Debug.Log(settingsScript.chances);
     }
 
     public void DudeOnClick()
     {
         settingsScript.characterStart = 2;
+        settingsScript.chances = 6;
         Debug.Log(settingsScript.characterStart);
+        Debug.Log(settingsScript.chances);
     }
 
     public void GavinOnClick()
     {
         settingsScript.characterStart = 3;
+        settingsScript.chances = 4;
         Debug.Log(settingsScript.characterStart);
+        Debug.Log(settingsScript.chances);
     }
 
 

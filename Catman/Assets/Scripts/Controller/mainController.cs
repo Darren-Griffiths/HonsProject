@@ -11,7 +11,6 @@ public class mainController : MonoBehaviour {
     public GameObject mouseLook;
     public GameObject outcome;
     int spawnNum = 1;
-    public int chances;
     public Text chanceText;
     public Text objectiveText;
     public GameObject winText;
@@ -47,18 +46,6 @@ public class mainController : MonoBehaviour {
     void Start ()
     {
         settingsScript = settings.GetComponent<settings>();
-        if (settingsScript.characterStart == 1)
-        {
-            chances = 8;
-        }
-        else if (settingsScript.characterStart == 2)
-        {
-                chances = 6;
-        }
-        else if (settingsScript.characterStart == 3)
-        {
-                chances = 4;
-        }
         //playerCam = mouselook.GetComponent<mainController>();
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
@@ -76,10 +63,10 @@ public class mainController : MonoBehaviour {
 
         
 
-        if (chances < 1)
+        if (settingsScript.chances < 1)
         {
 
-            chances = 0;
+            settingsScript.chances = 0;
             Time.timeScale = 0;
             outcome.SetActive(true);
             lossText.SetActive(true);
@@ -91,14 +78,14 @@ public class mainController : MonoBehaviour {
     void SetChanceText ()
     {
 
-        chanceText.text = "Chances: " + chances.ToString();
+        chanceText.text = "Chances: " + settingsScript.chances.ToString();
 
     }
     public void chanceLost()
     {
-        chances = chances - 1;
+        settingsScript.chances = settingsScript.chances - 1;
         SetChanceText();
-        Debug.Log(chances);
+        Debug.Log(settingsScript.chances);
     }
 
     public void ExitOnClick()
