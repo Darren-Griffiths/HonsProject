@@ -148,3 +148,4 @@ MonoBehaviour:
   hatchet: 0
   saw: 0
   drill: 0
+  settings: {fileID: 1685823777655432, guid: 7bee94820687e2c4c87f2c9c9c47e5e6, type: 2}

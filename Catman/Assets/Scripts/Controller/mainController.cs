@@ -24,6 +24,8 @@ public class mainController : MonoBehaviour {
     public int drill;
 
     private mainController mainmenuScript;
+    private settings settingsScript;
+    public GameObject settings;
 
 
 
@@ -44,8 +46,20 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        settingsScript = settings.GetComponent<settings>();
+        if (settingsScript.characterStart == 1)
+        {
+            chances = 8;
+        }
+        else if (settingsScript.characterStart == 2)
+        {
+                chances = 6;
+        }
+        else if (settingsScript.characterStart == 3)
+        {
+                chances = 4;
+        }
         //playerCam = mouselook.GetComponent<mainController>();
-        chances = 8;
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
         boltcutter = 0;
@@ -59,6 +73,8 @@ public class mainController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        
 
         if (chances < 1)
         {
