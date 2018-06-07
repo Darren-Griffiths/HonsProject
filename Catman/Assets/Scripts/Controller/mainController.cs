@@ -23,6 +23,9 @@ public class mainController : MonoBehaviour {
     public int saw;
     public int drill;
 
+    private mainController mainmenuScript;
+
+
 
 
     ////

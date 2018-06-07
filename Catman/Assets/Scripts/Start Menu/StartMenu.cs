@@ -19,14 +19,15 @@ public class StartMenu : MonoBehaviour {
     public Color white;
     public GameObject audioMenu;
     public AudioMixer masterMixer;
-    public int characterStart;
+    public GameObject settings;
+    private settings settingsScript;
 
     // Use this for initialization
     void Start()
     {
         Time.timeScale = 1;
         Cursor.visible = true;
-        characterStart = 3;
+        settingsScript = settings.GetComponent<settings>();
     }
 
     // Update is called once per frame
@@ -37,21 +38,21 @@ public class StartMenu : MonoBehaviour {
         Cursor.visible = true;
   
 
-        if (characterStart == 1)
+        //if ()
         
-        {
+        //{
             //ColorBlock ashCB = AshleyButton.GetComponent<Button>().colors;
             //ashCB.normalColor = red;
             //AshleyButton.GetComponent<Button>().colors = ashCB;
-        }
+        //}
         
-        else
-        {
-            //shleyButton.GetComponent<Image>().color = white;
+        //else
+        //{
+       //     //shleyButton.GetComponent<Image>().color = white;
             ///     ColorBlock ashCB = AshleyButton.GetComponent<Button>().colors;
             ///     ashCB.normalColor = white;
             ///     AshleyButton.GetComponent<Button>().colors = ashCB;
-        }
+        //}
  
     }
 
@@ -75,20 +76,20 @@ public class StartMenu : MonoBehaviour {
 
     public void AshleyOnClick()
     {
-        characterStart = 1;
-        Debug.Log(characterStart);
+        settingsScript.characterStart = 1;
+        Debug.Log(settingsScript.characterStart);
     }
 
     public void DudeOnClick()
     {
-        characterStart = 2;
-        Debug.Log(characterStart);
+        settingsScript.characterStart = 2;
+        Debug.Log(settingsScript.characterStart);
     }
 
     public void GavinOnClick()
     {
-        characterStart = 3;
-        Debug.Log(characterStart);
+        settingsScript.characterStart = 3;
+        Debug.Log(settingsScript.characterStart);
     }
 
 

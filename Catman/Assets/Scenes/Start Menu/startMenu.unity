@@ -203,7 +203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983691874 stripped
 GameObject:
@@ -249,133 +249,65 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114281410892022010, guid: b25c611241f3620408e22f898195eb82,
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: playButton
+      value: 
+      objectReference: {fileID: 507791696}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: AshleyButton
+      value: 
+      objectReference: {fileID: 968899138}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: DudeButton
+      value: 
+      objectReference: {fileID: 59053520}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: GavinButton
+      value: 
+      objectReference: {fileID: 1891251546}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
         type: 2}
       propertyPath: startButton
       value: 
-      objectReference: {fileID: 507791696}
-    - target: {fileID: 114281410892022010, guid: b25c611241f3620408e22f898195eb82,
+      objectReference: {fileID: 983691874}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
         type: 2}
       propertyPath: optionsButton
       value: 
       objectReference: {fileID: 931962124}
-    - target: {fileID: 114281410892022010, guid: b25c611241f3620408e22f898195eb82,
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
         type: 2}
       propertyPath: exitButton
       value: 
       objectReference: {fileID: 320803378}
-    m_RemovedComponents:
-    - {fileID: 114281410892022010, guid: b25c611241f3620408e22f898195eb82, type: 2}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: returnButton
+      value: 
+      objectReference: {fileID: 629322884}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: audioMenu
+      value: 
+      objectReference: {fileID: 976740942}
+    - target: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
+        type: 2}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 1719778292}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b25c611241f3620408e22f898195eb82, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1133905696 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1436371350941162, guid: b25c611241f3620408e22f898195eb82,
+--- !u!114 &1133905697 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114402120978923690, guid: b25c611241f3620408e22f898195eb82,
     type: 2}
   m_PrefabInternal: {fileID: 1064420156}
---- !u!114 &1133905697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133905696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8b176b6dd7cb4847a72dd985f2cbfef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playButton: {fileID: 507791696}
-  AshleyButton: {fileID: 968899138}
-  DudeButton: {fileID: 59053520}
-  GavinButton: {fileID: 1891251546}
-  startButton: {fileID: 983691874}
-  optionsButton: {fileID: 931962124}
-  exitButton: {fileID: 320803378}
-  returnButton: {fileID: 629322884}
-  audioMenu: {fileID: 976740942}
-  masterMixer: {fileID: 24100000, guid: 342222aaa0c848e4ebfaf642f6ea0989, type: 2}
-  characterStart: 0
---- !u!82 &1133905699
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133905696}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243427370407055900, guid: 342222aaa0c848e4ebfaf642f6ea0989,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: 47b43a1d21bd3404b9fd3724d4d5276d, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!1 &1260889220
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +396,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1719778292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1719778294}
+  - component: {fileID: 1719778293}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1719778293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719778292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2cd2f67684897a47876acc68ae7be11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterMixer: {fileID: 24100000, guid: 342222aaa0c848e4ebfaf642f6ea0989, type: 2}
+  characterStart: 0
+--- !u!4 &1719778294
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719778292}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.520675, y: -7.0536156, z: 92.03853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1891251546 stripped
 GameObject:
@@ -640,6 +614,61 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260117900265040, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AshleyOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 114683041429774286, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DudeOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 114070346985032850, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GavinOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 114930788931809512, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114930788931809512, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114930788931809512, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260117900265040, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260117900265040, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260117900265040, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114930788931809512, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260117900265040, guid: 28c940eb73daa6c468fe6383cb6259a6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28c940eb73daa6c468fe6383cb6259a6, type: 2}
