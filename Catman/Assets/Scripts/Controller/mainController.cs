@@ -66,12 +66,12 @@ public class mainController : MonoBehaviour {
         if (settingsScript.chances < 1)
         {
 
-            settingsScript.chances = 0;
-            Time.timeScale = 0;
-            outcome.SetActive(true);
-            lossText.SetActive(true);
+           settingsScript.chances = 0;
+           Time.timeScale = 0;
+           outcome.SetActive(true);
+           lossText.SetActive(true);
 
-        }
+         }
 	}
 
 

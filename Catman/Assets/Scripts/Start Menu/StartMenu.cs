@@ -19,6 +19,7 @@ public class StartMenu : MonoBehaviour {
     public Color white;
     public GameObject audioMenu;
     public AudioMixer masterMixer;
+
     public GameObject settings;
     private settings settingsScript;
 
@@ -76,26 +77,26 @@ public class StartMenu : MonoBehaviour {
 
     public void AshleyOnClick()
     {
-        settingsScript.characterStart = 1;
         settingsScript.chances = 8;
-        Debug.Log(settingsScript.characterStart);
         Debug.Log(settingsScript.chances);
+        settingsScript.characterSelection = 1;
+        Debug.Log(settingsScript.characterSelection);
     }
 
     public void DudeOnClick()
     {
-        settingsScript.characterStart = 2;
         settingsScript.chances = 6;
-        Debug.Log(settingsScript.characterStart);
         Debug.Log(settingsScript.chances);
+        settingsScript.characterSelection = 2;
+        Debug.Log(settingsScript.characterSelection);
     }
 
     public void GavinOnClick()
     {
-        settingsScript.characterStart = 3;
         settingsScript.chances = 4;
-        Debug.Log(settingsScript.characterStart);
         Debug.Log(settingsScript.chances);
+        settingsScript.characterSelection = 3;
+        Debug.Log(settingsScript.characterSelection);
     }
 
 

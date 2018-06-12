@@ -8,8 +8,8 @@ public class settings : MonoBehaviour {
 
 
     public AudioMixer masterMixer;
-    public int characterStart;
     public int chances;
+    public int characterSelection;
 
     void Awake()
     {
@@ -17,7 +17,10 @@ public class settings : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
+
+      
 
 
 		

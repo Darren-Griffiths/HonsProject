@@ -52,5 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterMixer: {fileID: 24100000, guid: 342222aaa0c848e4ebfaf642f6ea0989, type: 2}
-  characterStart: 1
-  chances: 8
+  characterStart: 0
+  chances: 0

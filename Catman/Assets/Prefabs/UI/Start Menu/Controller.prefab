@@ -145,5 +145,4 @@ MonoBehaviour:
   white: {r: 1, g: 1, b: 1, a: 0}
   audioMenu: {fileID: 0}
   masterMixer: {fileID: 24100000, guid: 342222aaa0c848e4ebfaf642f6ea0989, type: 2}
-  characterStart: 0
   settings: {fileID: 0}

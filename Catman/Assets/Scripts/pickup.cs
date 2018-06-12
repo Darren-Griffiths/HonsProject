@@ -80,7 +80,7 @@ public class pickup : MonoBehaviour {
 
         if (settingsScript.chances == 0)
         {
-            nomoreTry.Play();
+           nomoreTry.Play();
         }
 
         //Raycast for Objective Door
