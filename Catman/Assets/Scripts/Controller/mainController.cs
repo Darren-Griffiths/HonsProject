@@ -22,13 +22,16 @@ public class mainController : MonoBehaviour {
     public int saw;
     public int drill;
 
+    //This holds the chance value stored on the player prefs
     public int chances;
+    //This holds the character selection value from the player prefs
+    public int characterSelection;
 
     private mainController mainmenuScript;
     private settings settingsScript;
     public GameObject settings;
 
-    public int characterSelection;
+
 
 
 
@@ -50,25 +53,30 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+
+        ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
-        Debug.Log(characterSelection + "Char");
+
+        ///If the character selection is Ashley, the player chances are set to 8
         if (characterSelection == 1)
         {
             chances = 8;
         }
-
+        ///If the character selection is Dude, the player chances are set to 6
         if (characterSelection == 2)
         {
             chances = 6;
         }
-
+        ///If the character selection is Gavin, the player chances are set to 4
         if (characterSelection == 3)
         {
             chances = 4;
         }
 
+        ///Stores the players chances in player prefs
+        PlayerPrefs.SetInt("playerChances", chances);
+
         settingsScript = settings.GetComponent<settings>();
-        //playerCam = mouselook.GetComponent<mainController>();
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
         boltcutter = 0;
@@ -107,7 +115,10 @@ public class mainController : MonoBehaviour {
     {
         chances = chances - 1;
         SetChanceText();
+        ///Stores the players chances in player prefs
+        PlayerPrefs.SetInt("playerChances", chances);
         Debug.Log(chances);
+
     }
 
     public void ExitOnClick()
