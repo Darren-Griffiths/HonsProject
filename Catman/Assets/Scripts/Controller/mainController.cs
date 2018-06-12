@@ -28,6 +28,9 @@ public class mainController : MonoBehaviour {
     private settings settingsScript;
     public GameObject settings;
 
+    public int characterSelection;
+
+
 
 
 
@@ -47,8 +50,24 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        characterSelection = PlayerPrefs.GetInt("characterSelction");
+        Debug.Log(characterSelection + "Char");
+        if (characterSelection == 1)
+        {
+            chances = 8;
+        }
+
+        if (characterSelection == 2)
+        {
+            chances = 6;
+        }
+
+        if (characterSelection == 3)
+        {
+            chances = 4;
+        }
+
         settingsScript = settings.GetComponent<settings>();
-        chances = 8;
         //playerCam = mouselook.GetComponent<mainController>();
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
