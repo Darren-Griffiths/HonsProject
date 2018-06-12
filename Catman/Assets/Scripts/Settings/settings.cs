@@ -9,7 +9,6 @@ public class settings : MonoBehaviour {
 
     public AudioMixer masterMixer;
     public int chances;
-    public int characterSelection;
 
     void Awake()
     {

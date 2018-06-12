@@ -23,12 +23,18 @@ public class StartMenu : MonoBehaviour {
     public GameObject settings;
     private settings settingsScript;
 
+    //This holds the character selection value from the player prefs
+    public int characterSelection;
+
     // Use this for initialization
     void Start()
     {
         Time.timeScale = 1;
         Cursor.visible = true;
         settingsScript = settings.GetComponent<settings>();
+        PlayerPrefs.SetInt("characterSelction", 3);
+        characterSelection = PlayerPrefs.GetInt("characterSelction");
+        Debug.Log(characterSelection);
     }
 
     // Update is called once per frame
@@ -79,24 +85,33 @@ public class StartMenu : MonoBehaviour {
     {
         settingsScript.chances = 8;
         Debug.Log(settingsScript.chances);
-        settingsScript.characterSelection = 1;
-        Debug.Log(settingsScript.characterSelection);
+
+        ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
+        characterSelection = 1;
+        PlayerPrefs.SetInt("characterSelction", characterSelection);
+        Debug.Log(characterSelection + "The Real Deal");
     }
 
     public void DudeOnClick()
     {
         settingsScript.chances = 6;
         Debug.Log(settingsScript.chances);
-        settingsScript.characterSelection = 2;
-        Debug.Log(settingsScript.characterSelection);
+
+        ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
+        characterSelection = 2;
+        PlayerPrefs.SetInt("characterSelction", characterSelection);
+        Debug.Log(characterSelection + "The Real Deal");
     }
 
     public void GavinOnClick()
     {
         settingsScript.chances = 4;
         Debug.Log(settingsScript.chances);
-        settingsScript.characterSelection = 3;
-        Debug.Log(settingsScript.characterSelection);
+        
+        ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
+        characterSelection = 3;
+        PlayerPrefs.SetInt("characterSelction", characterSelection);
+        Debug.Log(characterSelection + "The Real Deal");
     }
 
 

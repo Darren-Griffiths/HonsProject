@@ -22,6 +22,8 @@ public class mainController : MonoBehaviour {
     public int saw;
     public int drill;
 
+    public int lvlChances;
+
     private mainController mainmenuScript;
     private settings settingsScript;
     public GameObject settings;
@@ -46,6 +48,7 @@ public class mainController : MonoBehaviour {
     void Start ()
     {
         settingsScript = settings.GetComponent<settings>();
+        lvlChances = 8;
         //playerCam = mouselook.GetComponent<mainController>();
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
@@ -56,7 +59,7 @@ public class mainController : MonoBehaviour {
         saw = 0;
         drill = 0;
 
-}
+    }
 	
 	// Update is called once per frame
 	void Update () {
