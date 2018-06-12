@@ -63,10 +63,10 @@ public class pickup : MonoBehaviour {
                     Time.timeScale = 0;
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    winnerText.text = "Ashley,\n You have successively passed the first challege with (" + settingsScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
+                    winnerText.text = "Ashley,\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
                     "We are done here press ESC....";
                 }
-                else if (settingsScript.chances >0)
+                else if (maincontrollerScript.chances > 0)
                 {
                     negTry.Play();
                     maincontrollerScript.chanceLost();
@@ -78,7 +78,7 @@ public class pickup : MonoBehaviour {
             tryText.enabled = false;
         }
 
-        if (settingsScript.chances == 0)
+        if (maincontrollerScript.chances == 0)
         {
            nomoreTry.Play();
         }

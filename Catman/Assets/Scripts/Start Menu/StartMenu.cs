@@ -32,8 +32,12 @@ public class StartMenu : MonoBehaviour {
         Time.timeScale = 1;
         Cursor.visible = true;
         settingsScript = settings.GetComponent<settings>();
-        PlayerPrefs.SetInt("characterSelction", 3);
+
+        ///Sets an intial character selection for default play in player prefs
+        PlayerPrefs.SetInt("characterSelction", 1);
+        ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
+        ///Displays character selection stored in the player prefs
         Debug.Log(characterSelection);
     }
 
@@ -83,8 +87,8 @@ public class StartMenu : MonoBehaviour {
 
     public void AshleyOnClick()
     {
-        settingsScript.chances = 8;
-        Debug.Log(settingsScript.chances);
+        //settingsScript.chances = 8;
+        //Debug.Log(settingsScript.chances);
 
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 1;
@@ -94,8 +98,8 @@ public class StartMenu : MonoBehaviour {
 
     public void DudeOnClick()
     {
-        settingsScript.chances = 6;
-        Debug.Log(settingsScript.chances);
+        //settingsScript.chances = 6;
+        //Debug.Log(settingsScript.chances);
 
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 2;
@@ -105,8 +109,8 @@ public class StartMenu : MonoBehaviour {
 
     public void GavinOnClick()
     {
-        settingsScript.chances = 4;
-        Debug.Log(settingsScript.chances);
+        //settingsScript.chances = 4;
+        //Debug.Log(settingsScript.chances);
         
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 3;

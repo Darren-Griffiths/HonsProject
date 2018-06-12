@@ -22,7 +22,7 @@ public class mainController : MonoBehaviour {
     public int saw;
     public int drill;
 
-    public int lvlChances;
+    public int chances;
 
     private mainController mainmenuScript;
     private settings settingsScript;
@@ -48,7 +48,7 @@ public class mainController : MonoBehaviour {
     void Start ()
     {
         settingsScript = settings.GetComponent<settings>();
-        lvlChances = 8;
+        chances = 8;
         //playerCam = mouselook.GetComponent<mainController>();
         SetChanceText();
         objectiveText.text = "Objective: Find a way out!";
@@ -66,10 +66,10 @@ public class mainController : MonoBehaviour {
 
         
 
-        if (settingsScript.chances < 1)
+        if (chances < 1)
         {
 
-           settingsScript.chances = 0;
+           chances = 0;
            Time.timeScale = 0;
            outcome.SetActive(true);
            lossText.SetActive(true);
@@ -81,14 +81,14 @@ public class mainController : MonoBehaviour {
     void SetChanceText ()
     {
 
-        chanceText.text = "Chances: " + settingsScript.chances.ToString();
+        chanceText.text = "Chances: " + chances.ToString();
 
     }
     public void chanceLost()
     {
-        settingsScript.chances = settingsScript.chances - 1;
+        chances = chances - 1;
         SetChanceText();
-        Debug.Log(settingsScript.chances);
+        Debug.Log(chances);
     }
 
     public void ExitOnClick()

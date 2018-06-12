@@ -8,7 +8,7 @@ public class settings : MonoBehaviour {
 
 
     public AudioMixer masterMixer;
-    public int chances;
+    //public int chances;
 
     void Awake()
     {
