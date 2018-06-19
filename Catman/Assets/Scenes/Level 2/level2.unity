@@ -422,6 +422,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1377145542331578, guid: 57bc387c29ce01b4e92254491be6b57c, type: 2}
+      propertyPath: m_Name
+      value: Evil Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377145542331578, guid: 57bc387c29ce01b4e92254491be6b57c, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354268111960908, guid: 57bc387c29ce01b4e92254491be6b57c, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57bc387c29ce01b4e92254491be6b57c, type: 2}
   m_IsPrefabParent: 0
@@ -556,6 +568,23 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1959740217 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1377145542331578, guid: 57bc387c29ce01b4e92254491be6b57c,
+    type: 2}
+  m_PrefabInternal: {fileID: 427617157}
+--- !u!114 &1959740222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959740217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b01c66636909446acb9cdcb34b2bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1001 &2056637814
 Prefab:
   m_ObjectHideFlags: 0
