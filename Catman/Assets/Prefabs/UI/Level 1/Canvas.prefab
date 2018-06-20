@@ -2093,6 +2093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPosition: {x: 0, y: 0, z: 0}
   paperText: {fileID: 114739775788192170}
+  StartMenu: {fileID: 1436371350941162, guid: b25c611241f3620408e22f898195eb82, type: 2}
 --- !u!222 &222026529110701616
 CanvasRenderer:
   m_ObjectHideFlags: 1

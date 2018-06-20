@@ -9,9 +9,13 @@ public class Inventory : MonoBehaviour {
     public Vector3 inventoryPosition;
     public Text paperText;
 
+    private StartMenu startmenuScript;
+    public GameObject StartMenu;
+
     // Use this for initialization
     void Start ()
     {
+        startmenuScript = StartMenu.GetComponent<StartMenu>();
         show = false;
         transform.localPosition = new Vector3(0, 800, 0);
         print(transform.localPosition.y);
@@ -46,7 +50,8 @@ public class Inventory : MonoBehaviour {
 
     void SetPaperText()
     {
-        paperText.text = "Wanker, I have been watching you, for so long I have been wanting you.Now I have you, II feel so guilty for taken you." +
+
+        paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nI have been watching you, for so long I have been wanting you.Now I have you, II feel so guilty for taken you." +
         "It pains me to think you don't want me. So heres the deal Ashley, I will give you NINE chances to show me you want me...except from the once chance I have just giving you to show me you truely dont care.";
     }
 }

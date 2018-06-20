@@ -25,6 +25,9 @@ public class StartMenu : MonoBehaviour {
 
     //This holds the character selection value from the player prefs
     public int characterSelection;
+    
+    //This holds the character name from the player prefs
+    public string characterName;
 
     // Use this for initialization
     void Start()
@@ -32,7 +35,8 @@ public class StartMenu : MonoBehaviour {
         Time.timeScale = 1;
         Cursor.visible = true;
         settingsScript = settings.GetComponent<settings>();
-
+        ///Sets an initial character name
+        characterName = "Ashley";
         ///Sets an intial character selection for default play in player prefs
         PlayerPrefs.SetInt("characterSelction", 1);
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
@@ -93,7 +97,9 @@ public class StartMenu : MonoBehaviour {
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 1;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
-        Debug.Log(characterSelection + "The Real Deal");
+        characterName = "Ashley";
+        PlayerPrefs.SetString("characterName", characterName);
+        
     }
 
     public void DudeOnClick()
@@ -105,6 +111,8 @@ public class StartMenu : MonoBehaviour {
         characterSelection = 2;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
         Debug.Log(characterSelection + "The Real Deal");
+        characterName = "Dude";
+        PlayerPrefs.SetString("characterName", characterName);
     }
 
     public void GavinOnClick()
@@ -116,6 +124,8 @@ public class StartMenu : MonoBehaviour {
         characterSelection = 3;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
         Debug.Log(characterSelection + "The Real Deal");
+        characterName = "Gavin";
+        PlayerPrefs.SetString("chatacterName", characterName);
     }
 
 

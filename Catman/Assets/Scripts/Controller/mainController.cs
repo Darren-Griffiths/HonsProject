@@ -27,7 +27,7 @@ public class mainController : MonoBehaviour {
     //This holds the character selection value from the player prefs
     public int characterSelection;
 
-    private mainController mainmenuScript;
+    //private mainController mainmenuScript;
     private settings settingsScript;
     public GameObject settings;
 
