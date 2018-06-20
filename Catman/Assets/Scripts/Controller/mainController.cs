@@ -73,6 +73,8 @@ public class mainController : MonoBehaviour {
             chances = 4;
         }
 
+        ///Inventory paper text
+
         ///Stores the players chances in player prefs
         PlayerPrefs.SetInt("playerChances", chances);
 

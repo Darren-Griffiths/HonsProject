@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour {
 
     bool show;
     public Vector3 inventoryPosition;
+    public Text paperText;
 
     // Use this for initialization
     void Start ()
@@ -15,10 +16,14 @@ public class Inventory : MonoBehaviour {
         transform.localPosition = new Vector3(0, 800, 0);
         print(transform.localPosition.y);
         print(show);
+
+
+        ///Inventory paper text
+        SetPaperText();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
         if (Input.GetKeyDown(KeyCode.I) && show == false)
         {
@@ -37,5 +42,11 @@ public class Inventory : MonoBehaviour {
             print(transform.localPosition.y);
             print(show);
         }
+    }
+
+    void SetPaperText()
+    {
+        paperText.text = "Wanker, I have been watching you, for so long I have been wanting you.Now I have you, II feel so guilty for taken you." +
+        "It pains me to think you don't want me. So heres the deal Ashley, I will give you NINE chances to show me you want me...except from the once chance I have just giving you to show me you truely dont care.";
     }
 }
