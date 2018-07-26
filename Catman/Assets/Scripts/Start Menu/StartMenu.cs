@@ -110,7 +110,6 @@ public class StartMenu : MonoBehaviour {
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 2;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
-        Debug.Log(characterSelection + "The Real Deal");
         characterName = "Dude";
         PlayerPrefs.SetString("characterName", characterName);
     }
@@ -123,7 +122,6 @@ public class StartMenu : MonoBehaviour {
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 3;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
-        Debug.Log(characterSelection + "The Real Deal");
         characterName = "Gavin";
         PlayerPrefs.SetString("chatacterName", characterName);
     }
