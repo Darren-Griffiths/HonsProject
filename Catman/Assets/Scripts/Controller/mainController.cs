@@ -13,6 +13,7 @@ public class mainController : MonoBehaviour {
     int spawnNum = 1;
     public Text chanceText;
     public Text objectiveText;
+    public Text losserText;
     public GameObject winText;
     public GameObject lossText;
     public int boltcutter;
@@ -101,6 +102,8 @@ public class mainController : MonoBehaviour {
            chances = 0;
            Time.timeScale = 0;
            outcome.SetActive(true);
+           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!well, I do feel privileged. Don't worry dear, I'm going to do unimaginable"
+           + "things to you. HOW EXCITING!";
            lossText.SetActive(true);
 
          }

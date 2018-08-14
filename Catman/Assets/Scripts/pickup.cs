@@ -63,7 +63,7 @@ public class pickup : MonoBehaviour {
                     Time.timeScale = 0;
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    winnerText.text = "Ashley,\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
+                    winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
                     "We are done here press ESC....";
                 }
                 else if (maincontrollerScript.chances > 0)

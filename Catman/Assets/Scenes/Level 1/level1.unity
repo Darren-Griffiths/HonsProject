@@ -543,6 +543,11 @@ Prefab:
       propertyPath: paperText
       value: 
       objectReference: {fileID: 830512254}
+    - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
+        type: 2}
+      propertyPath: losserText
+      value: 
+      objectReference: {fileID: 2056637815}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dda04d94bb374244b77ec022fca6d9a, type: 2}
   m_IsPrefabParent: 0
