@@ -10,6 +10,10 @@ public class pickup : MonoBehaviour {
     public GameObject controller;
     public GameObject winText;
     public GameObject outcome;
+    public GameObject cat1;
+    public GameObject cat2;
+    public GameObject cat3;
+    public GameObject cat4;
     public Text pressText;
     public Text pickupText;
     public Text tryText;
@@ -31,6 +35,7 @@ public class pickup : MonoBehaviour {
     public int objDistance = 2;
     public int objdoorDistance = 2;
     public int objstatueDistance = 1;
+    public float statueRotate = 90f;
     RaycastHit hit;
     RaycastHit statueHit;
     RaycastHit door;
@@ -214,9 +219,15 @@ public class pickup : MonoBehaviour {
             pressText.enabled = true;
 
             //Statue 1
-            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat" || hit.collider.gameObject.name == "Stand" && Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat1" || hit.collider.gameObject.name == "Stand1")
             {
+                
                 Debug.Log("Being Pressed Against A Cat");
+                
+            }
+            else
+            {
+
             }
         }
         else
