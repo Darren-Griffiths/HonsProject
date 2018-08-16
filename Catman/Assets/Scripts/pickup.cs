@@ -10,6 +10,7 @@ public class pickup : MonoBehaviour {
     public GameObject controller;
     public GameObject winText;
     public GameObject outcome;
+    public Text pressText;
     public Text pickupText;
     public Text tryText;
     public Text bc0Text;
@@ -29,7 +30,9 @@ public class pickup : MonoBehaviour {
     public int doorDistance = 50;
     public int objDistance = 2;
     public int objdoorDistance = 2;
+    public int objstatueDistance = 1;
     RaycastHit hit;
+    RaycastHit statueHit;
     RaycastHit door;
     RaycastHit objDoor;
     public AudioSource negTry;
@@ -50,7 +53,10 @@ public class pickup : MonoBehaviour {
 
     void Update()
     {
-       
+       ///Level 1
+       ///Update 
+       ///
+
         //Raycast for Door
         if (Physics.Raycast(transform.position, transform.forward, out door, doorDistance) && door.collider.gameObject.tag == "Door")
         {
@@ -91,11 +97,7 @@ public class pickup : MonoBehaviour {
              objectiveText.text = "Objective: Well Done, you have found the door. Find tools to try the lock";
             }
         }
-        //Raycast for Statues
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Statue")
-        {
 
-        }
         
 
         //Raycast for Boltcutter
@@ -195,6 +197,32 @@ public class pickup : MonoBehaviour {
         else
         {
             pickupText.enabled = false;
+        }
+
+
+        ///Level 2
+        ///Update
+
+
+        ///Level 3
+        ///Update Void
+        ///
+        ///
+                //Raycast for Statues
+        if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
+        {
+            Debug.Log("Hitting statue");
+            pressText.enabled = true;
+
+            //Statue 1
+            if (hit.collider.gameObject.name == "Cat Statue 1" && Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("Being Pressed Against A Cat");
+            }
+        }
+        else
+        {
+            pressText.enabled = false;
         }
     }
 }
