@@ -211,11 +211,10 @@ public class pickup : MonoBehaviour {
                 //Raycast for Statues
         if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
-            Debug.Log("Hitting statue");
             pressText.enabled = true;
 
             //Statue 1
-            if (hit.collider.gameObject.name == "Cat Statue 1" && Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat" || hit.collider.gameObject.name == "Stand" && Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Being Pressed Against A Cat");
             }
