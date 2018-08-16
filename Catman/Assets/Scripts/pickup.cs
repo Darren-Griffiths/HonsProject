@@ -92,7 +92,7 @@ public class pickup : MonoBehaviour {
             }
         }
         //Raycast for Statues
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "objStatue")
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Statue")
         {
 
         }
