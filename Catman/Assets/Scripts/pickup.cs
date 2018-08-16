@@ -225,10 +225,31 @@ public class pickup : MonoBehaviour {
                 Debug.Log("Being Pressed Against A Cat");
                 cat1.transform.Rotate(0, 0, statueRotate);
             }
-            else
+
+            //Statue 2
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat2" || Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Stand2")
             {
-                cat1.transform.Rotate(0, 0, 0);
+
+                Debug.Log("Being Pressed Against A Cat");
+                cat1.transform.Rotate(0, 0, statueRotate);
             }
+
+            //Statue 3
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat3" || Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Stand3")
+            {
+
+                Debug.Log("Being Pressed Against A Cat");
+                cat1.transform.Rotate(0, 0, statueRotate);
+            }
+
+            //Statue 4
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat4" || Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Stand4")
+            {
+
+                Debug.Log("Being Pressed Against A Cat");
+                cat1.transform.Rotate(0, 0, statueRotate);
+            }
+
         }
         else
         {
