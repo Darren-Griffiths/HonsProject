@@ -12,6 +12,7 @@ TagManager:
   - Object
   - Key Object
   - Door
+  - Statue
   layers:
   - Default
   - TransparentFX
