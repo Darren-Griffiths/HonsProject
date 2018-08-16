@@ -91,7 +91,11 @@ public class pickup : MonoBehaviour {
              objectiveText.text = "Objective: Well Done, you have found the door. Find tools to try the lock";
             }
         }
+        //Raycast for Statues
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "objStatue")
+        {
 
+        }
         
 
         //Raycast for Boltcutter
