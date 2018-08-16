@@ -35,7 +35,7 @@ public class pickup : MonoBehaviour {
     public int objDistance = 2;
     public int objdoorDistance = 2;
     public int objstatueDistance = 1;
-    public float statueRotate = 90f;
+    public float statueRotate = 900f;
     RaycastHit hit;
     RaycastHit statueHit;
     RaycastHit door;
@@ -219,15 +219,15 @@ public class pickup : MonoBehaviour {
             pressText.enabled = true;
 
             //Statue 1
-            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat1" || hit.collider.gameObject.name == "Stand1")
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Cat1" || Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Stand1")
             {
                 
                 Debug.Log("Being Pressed Against A Cat");
-                
+                cat1.transform.Rotate(0, 0, statueRotate);
             }
             else
             {
-
+                cat1.transform.Rotate(0, 0, 0);
             }
         }
         else
