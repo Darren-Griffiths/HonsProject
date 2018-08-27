@@ -8612,6 +8612,10 @@ Prefab:
       propertyPath: winnerText
       value: 
       objectReference: {fileID: 1688000720}
+    - target: {fileID: 1464996966651424, guid: 0ffbc72c80723c741a901ac7985f534e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ffbc72c80723c741a901ac7985f534e, type: 2}
   m_IsPrefabParent: 0
@@ -12161,7 +12165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &490594095
 Transform:
   m_ObjectHideFlags: 0
@@ -50034,7 +50038,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1119393031585106, guid: 2208b38d4653c694c89215c410d4b8ba, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2208b38d4653c694c89215c410d4b8ba, type: 2}
