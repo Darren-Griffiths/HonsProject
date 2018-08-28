@@ -6,6 +6,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 {
     [Serializable]
     public class MouseLook : MonoBehaviour
+
     {
         public float XSensitivity = 2f;
         public float YSensitivity = 2f;
@@ -15,7 +16,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool smooth;
         public float smoothTime = 5f;
         public bool lockCursor = true;
-
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
@@ -118,6 +118,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Time.timeScale == 0)
             {
                 Time.timeScale = 1;
+                
             }
 
             else if (Time.timeScale == 1)

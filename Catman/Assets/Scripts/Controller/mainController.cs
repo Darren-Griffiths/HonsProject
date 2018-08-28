@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class mainController : MonoBehaviour {
 
@@ -31,8 +32,6 @@ public class mainController : MonoBehaviour {
     //private mainController mainmenuScript;
     private settings settingsScript;
     public GameObject settings;
-
-
 
 
 
@@ -107,7 +106,7 @@ public class mainController : MonoBehaviour {
            lossText.SetActive(true);
 
          }
-	}
+    }
 
 
     void SetChanceText ()
@@ -141,6 +140,4 @@ public class mainController : MonoBehaviour {
         Debug.Log("Click");
         SceneManager.LoadScene("startMenu");
     }
-
-
 }

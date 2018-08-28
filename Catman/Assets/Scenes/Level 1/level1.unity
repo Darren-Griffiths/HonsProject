@@ -448,6 +448,16 @@ Prefab:
       propertyPath: winnerText
       value: 
       objectReference: {fileID: 1688000720}
+    - target: {fileID: 114872313512724606, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114038345446139904, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: fpc
+      value: 
+      objectReference: {fileID: 1971492005}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 725ad72dd93dd6a4997607ed934bd823, type: 2}
   m_IsPrefabParent: 0
@@ -548,6 +558,11 @@ Prefab:
       propertyPath: losserText
       value: 
       objectReference: {fileID: 2056637815}
+    - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
+        type: 2}
+      propertyPath: fpc
+      value: 
+      objectReference: {fileID: 1971492005}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dda04d94bb374244b77ec022fca6d9a, type: 2}
   m_IsPrefabParent: 0
@@ -701,6 +716,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1971492005 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1992614301486196, guid: 725ad72dd93dd6a4997607ed934bd823,
+    type: 2}
+  m_PrefabInternal: {fileID: 342364529}
 --- !u!1001 &2056637814
 Prefab:
   m_ObjectHideFlags: 0
