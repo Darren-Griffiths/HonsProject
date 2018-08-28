@@ -126,6 +126,11 @@ public class mainController : MonoBehaviour {
 
     }
 
+    public void nextlvl2OnClick()
+    {
+        SceneManager.LoadScene("level2");
+    }
+
     public void ExitOnClick()
     {
         Application.Quit();
