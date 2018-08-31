@@ -35,8 +35,11 @@ public class pickup : MonoBehaviour {
     //Level 2 Declare
     RaycastHit keypadHit;
     public float keypadDistance = 1;
-    public Text Keypad;
+    public GameObject keypadInput;
     public Text keypadpressText;
+
+    public GameObject mouselookObj;
+    private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
 
     //Level 3 Declare
     public GameObject cat1;
@@ -63,6 +66,8 @@ public class pickup : MonoBehaviour {
     {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
+        mouselookScript = mouselookObj.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+
     }
 
     void Update()
@@ -222,20 +227,24 @@ public class pickup : MonoBehaviour {
         {
             Debug.Log("can see keypad");
             keypadpressText.enabled = true;
-
             //Keypad
             if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Keypad")
             {
              Debug.Log("Keypad is being pressed");
-             GameObject.Find("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
-             Keypad.enabled = true;
+             mouselookScript.m_cursorIsLocked = false;
+             //GameObject.Find("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
+                keypadpressText.text = ("Click To Input Your Answer & Press Enter To Save It");
+                keypadInput.SetActive(true);
             }
         }
         else
         {
-            
+            keypadpressText.text = ("Press E To Use Keypad");
+            keypadInput.SetActive(false);
             keypadpressText.enabled = false;
         }
+
+
 
         ///Level 3
         ///Update Void
