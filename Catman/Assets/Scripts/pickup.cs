@@ -40,6 +40,7 @@ public class pickup : MonoBehaviour {
     RaycastHit statueHit;
     RaycastHit door;
     RaycastHit objDoor;
+    RaycastHit keypadHit;
     public AudioSource negTry;
     public AudioSource posTry;
     public AudioSource collectObj;
@@ -207,14 +208,24 @@ public class pickup : MonoBehaviour {
 
         ///Level 2
         ///Update
+        //Raycast for Keypad
+        if (Physics.Raycast(transform.position, transform.forward, out keypadHit, objstatueDistance) && keypadHit.collider.gameObject.tag == "Keypad")
+        {
+            pressText.enabled = true;
 
+            //Keypad
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Keypad")
+            {
 
-        ///Level 3
-        ///Update Void
-        ///
-        ///
-                //Raycast for Statues
-        if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
+                Debug.Log("Keypad is being pressed");
+            }
+
+            ///Level 3
+            ///Update Void
+            ///
+            ///
+            //Raycast for Statues
+            if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
             pressText.enabled = true;
 
