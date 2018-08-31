@@ -139,6 +139,7 @@ MonoBehaviour:
   outcome: {fileID: 0}
   chanceText: {fileID: 0}
   objectiveText: {fileID: 0}
+  losserText: {fileID: 0}
   winText: {fileID: 0}
   lossText: {fileID: 0}
   boltcutter: 0
