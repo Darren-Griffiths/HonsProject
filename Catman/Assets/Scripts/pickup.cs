@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class pickup : MonoBehaviour {
 
+    //Level1 Declare
     public GameObject inventoryPanel;
     public GameObject[] inventoryIcons;
     public GameObject controller;
     public GameObject winText;
     public GameObject outcome;
-    public GameObject cat1;
-    public GameObject cat2;
-    public GameObject cat3;
-    public GameObject cat4;
     public Text pressText;
     public Text pickupText;
     public Text tryText;
@@ -34,13 +31,24 @@ public class pickup : MonoBehaviour {
     public int doorDistance = 50;
     public int objDistance = 2;
     public int objdoorDistance = 2;
+
+    //Level 2 Declare
+    RaycastHit keypadHit;
+    public float keypadDistance = 1;
+    public Text Keypad;
+    public Text keypadpressText;
+
+    //Level 3 Declare
+    public GameObject cat1;
+    public GameObject cat2;
+    public GameObject cat3;
+    public GameObject cat4;
     public int objstatueDistance = 1;
     public float statueRotate = 900f;
     RaycastHit hit;
     RaycastHit statueHit;
     RaycastHit door;
     RaycastHit objDoor;
-    RaycastHit keypadHit;
     public AudioSource negTry;
     public AudioSource posTry;
     public AudioSource collectObj;
@@ -66,6 +74,7 @@ public class pickup : MonoBehaviour {
         //Raycast for Door
         if (Physics.Raycast(transform.position, transform.forward, out door, doorDistance) && door.collider.gameObject.tag == "Door")
         {
+            Debug.Log("door");
             tryText.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -209,23 +218,31 @@ public class pickup : MonoBehaviour {
         ///Level 2
         ///Update
         //Raycast for Keypad
-        if (Physics.Raycast(transform.position, transform.forward, out keypadHit, objstatueDistance) && keypadHit.collider.gameObject.tag == "Keypad")
+        if (Physics.Raycast(transform.position, transform.forward, out keypadHit, keypadDistance) && keypadHit.collider.gameObject.tag == "Keypad")
         {
-            pressText.enabled = true;
+            Debug.Log("can see keypad");
+            keypadpressText.enabled = true;
 
             //Keypad
             if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Keypad")
             {
-
-                Debug.Log("Keypad is being pressed");
+             Debug.Log("Keypad is being pressed");
+             GameObject.Find("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
+             Keypad.enabled = true;
             }
+        }
+        else
+        {
+            
+            keypadpressText.enabled = false;
+        }
 
-            ///Level 3
-            ///Update Void
-            ///
-            ///
-            //Raycast for Statues
-            if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
+        ///Level 3
+        ///Update Void
+        ///
+        ///
+        //Raycast for Statues
+        if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
             pressText.enabled = true;
 
