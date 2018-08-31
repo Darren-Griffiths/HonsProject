@@ -742,7 +742,10 @@ MonoBehaviour:
   doorDistance: 2
   objDistance: 2
   objdoorDistance: 10
-  Keypad: {fileID: 0}
+  keypadDistance: 2
+  keypadInput: {fileID: 0}
+  keypadpressText: {fileID: 0}
+  mouselookObj: {fileID: 1109891022638312}
   cat1: {fileID: 0}
   cat2: {fileID: 0}
   cat3: {fileID: 0}
@@ -785,6 +788,7 @@ MonoBehaviour:
   smooth: 0
   smoothTime: 5
   lockCursor: 1
+  m_cursorIsLocked: 1
 --- !u!114 &114974758885199060
 MonoBehaviour:
   m_ObjectHideFlags: 1
