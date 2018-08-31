@@ -217,15 +217,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734355782038146}
-  m_LocalRotation: {x: -0, y: 0.76953304, z: -0, w: 0.638607}
-  m_LocalPosition: {x: -19.37, y: 3.252, z: 15.589356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.1, y: 3.51, z: 14.17}
   m_LocalScale: {x: 0.18803081, y: 1, z: 0.5470126}
   m_Children:
   - {fileID: 224813979491460896}
   - {fileID: 4565971346364880}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 100.62401, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4921557993474590
 Transform:
   m_ObjectHideFlags: 1
@@ -722,6 +722,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   winText: {fileID: 0}
   outcome: {fileID: 0}
+  pressText: {fileID: 0}
   pickupText: {fileID: 0}
   tryText: {fileID: 0}
   bc0Text: {fileID: 0}
@@ -741,6 +742,13 @@ MonoBehaviour:
   doorDistance: 2
   objDistance: 2
   objdoorDistance: 10
+  Keypad: {fileID: 0}
+  cat1: {fileID: 0}
+  cat2: {fileID: 0}
+  cat3: {fileID: 0}
+  cat4: {fileID: 0}
+  objstatueDistance: 1
+  statueRotate: 900
   negTry: {fileID: 82361554856855700}
   posTry: {fileID: 82753888273016282}
   collectObj: {fileID: 82777325460661112}
