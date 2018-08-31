@@ -116,11 +116,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &91885737 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1734355782038146, guid: 4ef539dd583fc024fb09b067643c2191,
-    type: 2}
-  m_PrefabInternal: {fileID: 1488224334}
 --- !u!1 &174653227 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1489523820829818, guid: e39313cf7a73e9e4fa2372b95564dc89,
@@ -179,11 +174,6 @@ Prefab:
         type: 2}
     - target: {fileID: 114277537789610570, guid: e39313cf7a73e9e4fa2372b95564dc89,
         type: 2}
-      propertyPath: mouseLook
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114277537789610570, guid: e39313cf7a73e9e4fa2372b95564dc89,
-        type: 2}
       propertyPath: outcome
       value: 
       objectReference: {fileID: 1103213207}
@@ -210,84 +200,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e39313cf7a73e9e4fa2372b95564dc89, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &422890712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1940727314237588, guid: 3959e73f42013194095d5f2b00dd4a38,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 422890713}
-  - component: {fileID: 422890715}
-  - component: {fileID: 422890714}
-  m_Layer: 5
-  m_Name: Keypad Press
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &422890713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224297961085556228, guid: 3959e73f42013194095d5f2b00dd4a38,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 422890712}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1363958269}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.9000244, y: -52}
-  m_SizeDelta: {x: 600, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &422890714
+--- !u!114 &422890714 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 114811719785531782, guid: 3959e73f42013194095d5f2b00dd4a38,
     type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 422890712}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
+  m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.047565773, b: 0.9852941, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Press 'E' To Use Keypad
---- !u!222 &422890715
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222547614419724168, guid: 3959e73f42013194095d5f2b00dd4a38,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 422890712}
 --- !u!114 &442944613 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114357763823124062, guid: 3959e73f42013194095d5f2b00dd4a38,
@@ -358,18 +276,13 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &746873329 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114811719785531782, guid: 3959e73f42013194095d5f2b00dd4a38,
+  m_PrefabParentObject: {fileID: 114949159793260886, guid: 3959e73f42013194095d5f2b00dd4a38,
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1103213207 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1241246960204046, guid: 3959e73f42013194095d5f2b00dd4a38,
-    type: 2}
-  m_PrefabInternal: {fileID: 2056637814}
---- !u!224 &1363958269 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224772108579602400, guid: 3959e73f42013194095d5f2b00dd4a38,
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
 --- !u!1001 &1483447781
@@ -410,26 +323,6 @@ Prefab:
     - target: {fileID: 4656664390881106, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350776581160152, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.164787
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350776581160152, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.164787
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350776581160152, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.1801125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350776581160152, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -25.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4350776581160152, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -30.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
@@ -480,19 +373,9 @@ Prefab:
       objectReference: {fileID: 174653227}
     - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
         type: 2}
-      propertyPath: Keypad
+      propertyPath: winText
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
-        type: 2}
-      propertyPath: keypadDistance
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
-        type: 2}
-      propertyPath: tryText
-      value: 
-      objectReference: {fileID: 1565719262}
+      objectReference: {fileID: 1688000718}
     - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
         type: 2}
       propertyPath: outcome
@@ -500,29 +383,24 @@ Prefab:
       objectReference: {fileID: 1103213207}
     - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
         type: 2}
-      propertyPath: winText
-      value: 
-      objectReference: {fileID: 1688000718}
-    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
-        type: 2}
       propertyPath: pickupText
       value: 
       objectReference: {fileID: 746873329}
     - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
         type: 2}
+      propertyPath: tryText
+      value: 
+      objectReference: {fileID: 1565719262}
+    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
+      propertyPath: keypadInput
+      value: 
+      objectReference: {fileID: 1577086279}
+    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
       propertyPath: keypadpressText
       value: 
       objectReference: {fileID: 422890714}
-    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
-        type: 2}
-      propertyPath: pressText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114152481265672554, guid: 4ef539dd583fc024fb09b067643c2191,
-        type: 2}
-      propertyPath: fpc
-      value: 
-      objectReference: {fileID: 91885737}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ef539dd583fc024fb09b067643c2191, type: 2}
   m_IsPrefabParent: 0
@@ -532,6 +410,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1577086279 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1224698901866384, guid: 3959e73f42013194095d5f2b00dd4a38,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056637814}
 --- !u!1 &1688000718 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1080709230271910, guid: 3959e73f42013194095d5f2b00dd4a38,
@@ -654,19 +537,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 174653228}
-    - target: {fileID: 1224698901866384, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1940727314237588, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
-      propertyPath: m_Name
-      value: Pick Up
-      objectReference: {fileID: 0}
-    - target: {fileID: 114811719785531782, guid: 3959e73f42013194095d5f2b00dd4a38,
-        type: 2}
-      propertyPath: m_Text
-      value: Press 'E' To Pickup
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
   m_IsPrefabParent: 0
