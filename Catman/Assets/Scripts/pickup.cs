@@ -37,7 +37,7 @@ public class pickup : MonoBehaviour {
     public float keypadDistance = 1;
     public GameObject keypadInput;
     public Text keypadpressText;
-
+    RaycastHit door2;
     public GameObject mouselookObj;
     private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
 
@@ -242,6 +242,35 @@ public class pickup : MonoBehaviour {
             keypadpressText.text = ("Press E To Use Keypad");
             keypadInput.SetActive(false);
             keypadpressText.enabled = false;
+        }
+
+        //Raycast for Door
+        if (Physics.Raycast(transform.position, transform.forward, out door2, doorDistance) && door.collider.gameObject.tag == "Door2")
+        {
+            Debug.Log("door");
+            tryText.text = "Press E To Open Door";
+            tryText.enabled = true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (maincontrollerScript.keypadInput.text == "1")
+                {
+                    posTry.Play();
+                    Time.timeScale = 0;
+                    outcome.SetActive(true);
+                    winText.SetActive(true);
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n" +
+                    "We are done here press ESC....";
+                }
+                else if (maincontrollerScript.keypadInput.text != "1")
+                {
+                    negTry.Play();
+                    maincontrollerScript.chanceLost();
+                }
+            }
+        }
+        else
+        {
+            tryText.enabled = false;
         }
 
 
