@@ -24,6 +24,8 @@ public class mainController : MonoBehaviour {
     public int saw;
     public int drill;
 
+    public InputField keypadInput;
+
     //This holds the chance value stored on the player prefs
     public int chances;
     //This holds the character selection value from the player prefs
@@ -53,7 +55,7 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-
+        keypadInput.text = "5";
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
 
