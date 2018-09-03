@@ -197,6 +197,11 @@ Prefab:
       propertyPath: lossText
       value: 
       objectReference: {fileID: 1800543913}
+    - target: {fileID: 114277537789610570, guid: e39313cf7a73e9e4fa2372b95564dc89,
+        type: 2}
+      propertyPath: keypadInput
+      value: 
+      objectReference: {fileID: 1577086281}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e39313cf7a73e9e4fa2372b95564dc89, type: 2}
   m_IsPrefabParent: 0
@@ -415,6 +420,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1224698901866384, guid: 3959e73f42013194095d5f2b00dd4a38,
     type: 2}
   m_PrefabInternal: {fileID: 2056637814}
+--- !u!114 &1577086281 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056637814}
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1688000718 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1080709230271910, guid: 3959e73f42013194095d5f2b00dd4a38,
@@ -432,6 +443,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224772108579602400, guid: 3959e73f42013194095d5f2b00dd4a38,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -537,6 +558,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 174653228}
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515403150186512, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
   m_IsPrefabParent: 0
