@@ -14,6 +14,7 @@ public class mainController : MonoBehaviour {
     int spawnNum = 1;
     public Text chanceText;
     public Text objectiveText;
+    public Text lvl2objectiveText;
     public Text losserText;
     public GameObject winText;
     public GameObject lossText;
@@ -55,7 +56,7 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        keypadInput.text = "5";
+        
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
 
@@ -89,7 +90,6 @@ public class mainController : MonoBehaviour {
         hatchet = 0;
         saw = 0;
         drill = 0;
-
     }
 	
 	// Update is called once per frame
