@@ -15,6 +15,7 @@ TagManager:
   - Statue
   - Keypad
   - Door2
+  - Equation
   layers:
   - Default
   - TransparentFX
