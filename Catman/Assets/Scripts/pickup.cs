@@ -252,16 +252,16 @@ public class pickup : MonoBehaviour {
             tryText.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (maincontrollerScript.keypadInput.text == "1")
+                if (maincontrollerScript.keypadInput.text == "554")
                 {
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
+                    " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
                     posTry.Play();
                     Time.timeScale = 0;
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n" +
-                    "We are done here press ESC....";
                 }
-                else if (maincontrollerScript.keypadInput.text != "1")
+                else if (maincontrollerScript.keypadInput.text != "554")
                 {
                     negTry.Play();
                     maincontrollerScript.chanceLost();
@@ -273,14 +273,19 @@ public class pickup : MonoBehaviour {
             tryText.enabled = false;
         }
 
+        //Raycast for Objecive
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Equation")
+        {
+            //Debug.Log(hit.transform.name);
+            maincontrollerScript.objectiveText.text = "Objective: Solve the equation.";
+        }
 
-
-        ///Level 3
-        ///Update Void
-        ///
-        ///
-        //Raycast for Statues
-        if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
+            ///Level 3
+            ///Update Void
+            ///
+            ///
+            //Raycast for Statues
+            if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
             pressText.enabled = true;
 
