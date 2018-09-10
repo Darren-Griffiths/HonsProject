@@ -123,7 +123,8 @@ public class StartMenu : MonoBehaviour {
         characterSelection = 3;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
         characterName = "Gavin";
-        PlayerPrefs.SetString("chatacterName", characterName);
+        PlayerPrefs.SetString("characterName", characterName);
+        Debug.Log("Clicked Gav");
     }
 
 
