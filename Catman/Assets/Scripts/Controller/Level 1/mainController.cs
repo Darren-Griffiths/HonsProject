@@ -126,15 +126,20 @@ public class mainController : MonoBehaviour {
         Debug.Log(chances);
 
     }
-
+    //Loads level 2
     public void nextlvl2OnClick()
     {
         SceneManager.LoadScene("level2");
     }
-
+    //Loads level 3
     public void nextlvl3OnClick()
     {
         SceneManager.LoadScene("level3");
+    }
+    //Loads level 4
+    public void nextlvl4OnClick()
+    {
+        SceneManager.LoadScene("level4");
     }
 
     public void ExitOnClick()
