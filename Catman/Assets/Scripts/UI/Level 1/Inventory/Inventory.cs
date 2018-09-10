@@ -52,6 +52,6 @@ public class Inventory : MonoBehaviour {
     {
 
         paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nI have been watching you, for so long I have been wanting you.Now I have you, II feel so guilty for taken you." +
-        "It pains me to think you don't want me. So heres the deal Ashley, I will give you NINE chances to show me you want me...except from the once chance I have just giving you to show me you truely dont care.";
+        "It pains me to think you don't want me. So heres the deal" + PlayerPrefs.GetString("characterName") + ", I will give you NINE chances to show me you want me...except from the once chance I have just giving you to show me you truely dont care.";
     }
 }
