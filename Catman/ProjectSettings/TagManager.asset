@@ -16,6 +16,7 @@ TagManager:
   - Keypad
   - Door2
   - Equation
+  - Door3
   layers:
   - Default
   - TransparentFX
