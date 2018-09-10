@@ -48,6 +48,7 @@ public class pickup : MonoBehaviour {
     public GameObject cat4;
     public int objstatueDistance = 1;
     public float statueRotate = 900f;
+    RaycastHit door3;
     RaycastHit hit;
     RaycastHit statueHit;
     RaycastHit door;
@@ -326,6 +327,22 @@ public class pickup : MonoBehaviour {
         else
         {
             pressText.enabled = false;
+        }
+
+        if (Physics.Raycast(transform.position, transform.forward, out door3, doorDistance) && door.collider.gameObject.tag == "Door3")
+        {
+            Debug.Log("door");
+            tryText.text = "Press E To Open Door";
+            tryText.enabled = true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Time.timeScale = 0;
+                winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
+                " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
+                posTry.Play();
+                outcome.SetActive(true);
+                winText.SetActive(true);
+            }
         }
     }
 }
