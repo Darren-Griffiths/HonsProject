@@ -254,10 +254,10 @@ public class pickup : MonoBehaviour {
             {
                 if (maincontrollerScript.keypadInput.text == "554")
                 {
+                    Time.timeScale = 0;
                     winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
                     posTry.Play();
-                    Time.timeScale = 0;
                     outcome.SetActive(true);
                     winText.SetActive(true);
                 }
@@ -280,7 +280,7 @@ public class pickup : MonoBehaviour {
             maincontrollerScript.objectiveText.text = "Objective: Solve the equation.";
         }
 
-            ///Level 3
+        ///Level 3
             ///Update Void
             ///
             ///
