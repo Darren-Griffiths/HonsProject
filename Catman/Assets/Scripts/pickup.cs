@@ -287,6 +287,7 @@ public class pickup : MonoBehaviour {
             //Raycast for Statues
             if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
+            Debug.Log("See a cat");
             pressText.enabled = true;
 
             //Statue 1
