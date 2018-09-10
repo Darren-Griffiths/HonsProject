@@ -103,8 +103,8 @@ public class mainController : MonoBehaviour {
            chances = 0;
            Time.timeScale = 0;
            outcome.SetActive(true);
-           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!well, I do feel privileged. Don't worry dear, I'm going to do unimaginable"
-           + "things to you. HOW EXCITING!";
+           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \nDon't worry, I'm going to do unimaginable"
+           + "things to you. \n\nHOW EXCITING!";
            lossText.SetActive(true);
 
          }
