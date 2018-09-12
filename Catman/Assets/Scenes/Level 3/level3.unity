@@ -192,6 +192,11 @@ Prefab:
       objectReference: {fileID: 618250953}
     - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
         type: 2}
+      propertyPath: pressText
+      value: 
+      objectReference: {fileID: 1984934103}
+    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
+        type: 2}
       propertyPath: pickupText
       value: 
       objectReference: {fileID: 1889047565}
@@ -202,88 +207,14 @@ Prefab:
       objectReference: {fileID: 354113676}
     - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
         type: 2}
-      propertyPath: bc0Text
+      propertyPath: keypadInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1970999109}
     - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
         type: 2}
-      propertyPath: bc1Text
+      propertyPath: keypadpressText
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: ham0Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: ham1Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: sd0Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: sd1Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: hatch0Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: hatch1Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: saw0Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: saw1Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: drill0Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: drill1Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: objectiveText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: winnerText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1840019291041852, guid: 9daac4034924d0840ba5e338c0b46fd3, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: pressText
-      value: 
-      objectReference: {fileID: 1984934103}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: objstatueDistance
-      value: 2
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1454142636}
     - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
         type: 2}
       propertyPath: cat1
@@ -304,21 +235,6 @@ Prefab:
       propertyPath: cat4
       value: 
       objectReference: {fileID: 1979547206}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: keypadInput
-      value: 
-      objectReference: {fileID: 1970999109}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: mouselookObj
-      value: 
-      objectReference: {fileID: 276588015}
-    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
-        type: 2}
-      propertyPath: keypadpressText
-      value: 
-      objectReference: {fileID: 1454142636}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9daac4034924d0840ba5e338c0b46fd3, type: 2}
   m_IsPrefabParent: 0
