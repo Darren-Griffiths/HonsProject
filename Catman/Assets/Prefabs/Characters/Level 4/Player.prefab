@@ -145,22 +145,22 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4287767968965846
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464996966651424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6305, y: 3.252, z: 15.589356}
+  m_LocalRotation: {x: -0, y: 0.99799937, z: -0, w: -0.0632244}
+  m_LocalPosition: {x: 1.67, y: 3.149, z: 29.68}
   m_LocalScale: {x: 0.18803081, y: 1, z: 0.5470126}
   m_Children:
   - {fileID: 224946184331477944}
   - {fileID: 4845159931743646}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 187.24998, z: 0}
 --- !u!4 &4440882263929484
 Transform:
   m_ObjectHideFlags: 1
@@ -734,10 +734,6 @@ MonoBehaviour:
   controller: {fileID: 0}
   winText: {fileID: 0}
   outcome: {fileID: 0}
-  cat1: {fileID: 0}
-  cat2: {fileID: 0}
-  cat3: {fileID: 0}
-  cat4: {fileID: 0}
   pressText: {fileID: 0}
   pickupText: {fileID: 0}
   tryText: {fileID: 0}
@@ -758,6 +754,14 @@ MonoBehaviour:
   doorDistance: 2
   objDistance: 2
   objdoorDistance: 10
+  keypadDistance: 1
+  keypadInput: {fileID: 0}
+  keypadpressText: {fileID: 0}
+  mouselookObj: {fileID: 0}
+  cat1: {fileID: 0}
+  cat2: {fileID: 0}
+  cat3: {fileID: 0}
+  cat4: {fileID: 0}
   objstatueDistance: 1
   statueRotate: 900
   negTry: {fileID: 82683630487326774}
@@ -778,9 +782,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_RunSpeed: 8
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 10
+  m_JumpSpeed: 7
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook: {fileID: 114921735919335488}
@@ -878,6 +882,7 @@ MonoBehaviour:
   smooth: 0
   smoothTime: 5
   lockCursor: 1
+  m_cursorIsLocked: 1
 --- !u!124 &124505576679038764
 Behaviour:
   m_ObjectHideFlags: 1
