@@ -721,6 +721,7 @@ MonoBehaviour:
   smooth: 0
   smoothTime: 5
   lockCursor: 1
+  m_cursorIsLocked: 1
 --- !u!114 &114323044318626388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -741,6 +742,7 @@ MonoBehaviour:
   controller: {fileID: 0}
   winText: {fileID: 0}
   outcome: {fileID: 0}
+  pressText: {fileID: 0}
   pickupText: {fileID: 0}
   tryText: {fileID: 0}
   bc0Text: {fileID: 0}
@@ -760,6 +762,16 @@ MonoBehaviour:
   doorDistance: 2
   objDistance: 2
   objdoorDistance: 10
+  keypadDistance: 1
+  keypadInput: {fileID: 0}
+  keypadpressText: {fileID: 0}
+  mouselookObj: {fileID: 0}
+  cat1: {fileID: 0}
+  cat2: {fileID: 0}
+  cat3: {fileID: 0}
+  cat4: {fileID: 0}
+  objstatueDistance: 1
+  statueRotate: 900
   negTry: {fileID: 82796991608735742}
   posTry: {fileID: 82257960112636300}
   collectObj: {fileID: 82202400483129344}
@@ -790,9 +802,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_RunSpeed: 8
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 10
+  m_JumpSpeed: 7
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook: {fileID: 114038345446139904}
