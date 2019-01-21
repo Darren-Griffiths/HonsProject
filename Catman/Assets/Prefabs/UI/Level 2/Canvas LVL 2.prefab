@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 222206997571662634}
   - component: {fileID: 114907513031775954}
   - component: {fileID: 114935496608068444}
-  - component: {fileID: 114586485516823064}
+  - component: {fileID: 114609108231563908}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -526,7 +526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1459769889725580
 GameObject:
   m_ObjectHideFlags: 1
@@ -2527,13 +2527,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114160048677040742}
   m_TextComponent: {fileID: 114389509581961386}
   m_Placeholder: {fileID: 114956965928515756}
-  m_ContentType: 2
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 4
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 1
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -2820,20 +2820,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: =
---- !u!114 &114586485516823064
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199464893907406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580190a8b74c364c99208320d50063b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryPosition: {x: 0, y: 0, z: 0}
-  paperText: {fileID: 114804769493327056}
-  StartMenu: {fileID: 0}
 --- !u!114 &114590233195818014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2902,6 +2888,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114609108231563908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1199464893907406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1f24a9e29fcba4187e7f7644856d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperText: {fileID: 114804769493327056}
 --- !u!114 &114637874317497540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3349,13 +3347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ashley,
-
-
-    I have been watching you, for so long I have been wanting you. Now I have you,
-    II feel so guilty for taken you. It pains me to think you don''t want me. So heres
-    the deal Ashley, I will give you NINE chances to show me you want me...except
-    from the once chance I have just giving you to show me you truely dont care.'
+  m_Text: 
 --- !u!114 &114806546734620512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3671,7 +3663,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1199464893907406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
