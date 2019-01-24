@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour {
     {
         startmenuScript = StartMenu.GetComponent<StartMenu>();
         show = false;
-        transform.localPosition = new Vector3(0, 800, 0);
+        transform.localPosition = new Vector3(0, 9000, 0);
         print(transform.localPosition.y);
         print(show);
 
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.I) && show == true)
         {
             Debug.Log("Pressed I To Show INV");
-            transform.localPosition = new Vector3(0, 800, 0);
+            transform.localPosition = new Vector3(0, 9000, 0);
             show = false;
             print(transform.localPosition.y);
             print(show);

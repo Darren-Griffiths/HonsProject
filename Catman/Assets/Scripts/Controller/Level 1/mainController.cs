@@ -7,7 +7,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class mainController : MonoBehaviour {
 
-    public GameObject boltCutter;
+    //public GameObject boltCutter;
     public GameObject inventory;
     public GameObject mouseLook;
     public GameObject outcome;
@@ -56,7 +56,8 @@ public class mainController : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        
+
+        Time.timeScale = 1;
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
 

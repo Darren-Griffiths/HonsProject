@@ -77,7 +77,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Input.GetKeyUp(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
-                pauseGame();
+               
             }
             else if (Input.GetMouseButtonUp(0))
             {

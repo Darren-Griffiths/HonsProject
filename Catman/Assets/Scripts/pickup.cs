@@ -92,6 +92,7 @@ public class pickup : MonoBehaviour {
                     winText.SetActive(true);
                     winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
                     "We are done here press ESC....";
+                    mouselookScript.m_cursorIsLocked = false;
                 }
                 else if (maincontrollerScript.chances > 0)
                 {
@@ -278,7 +279,7 @@ public class pickup : MonoBehaviour {
         if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Equation")
         {
             //Debug.Log(hit.transform.name);
-            maincontrollerScript.objectiveText.text = "Objective: Solve the equation. \n Press I For A Work Sheet";
+            maincontrollerScript.objectiveText.text = "Objective: Solve the equation. \n Press Iv For A Work Sheet";
         }
 
         ///Level 3
