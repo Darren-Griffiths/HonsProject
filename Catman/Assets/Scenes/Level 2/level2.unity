@@ -923,7 +923,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 174653227}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243427370407055900, guid: 342222aaa0c848e4ebfaf642f6ea0989,
     type: 2}
@@ -2096,7 +2096,7 @@ Prefab:
     - target: {fileID: 82236444577504460, guid: e39313cf7a73e9e4fa2372b95564dc89,
         type: 2}
       propertyPath: Loop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1489523820829818, guid: e39313cf7a73e9e4fa2372b95564dc89, type: 2}
       propertyPath: m_Name
@@ -2107,6 +2107,16 @@ Prefab:
       propertyPath: losserText
       value: 
       objectReference: {fileID: 1800543915}
+    - target: {fileID: 82236444577504460, guid: e39313cf7a73e9e4fa2372b95564dc89,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bb5b873c65bb4af46b5cb47ffb4f66ef, type: 3}
+    - target: {fileID: 82236444577504460, guid: e39313cf7a73e9e4fa2372b95564dc89,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e39313cf7a73e9e4fa2372b95564dc89, type: 2}
   m_IsPrefabAsset: 0

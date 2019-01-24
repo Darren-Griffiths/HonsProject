@@ -104,7 +104,7 @@ public class mainController : MonoBehaviour {
            Time.timeScale = 0;
            outcome.SetActive(true);
            lossText.SetActive(true);
-           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \nDon't worry, I'm going to do unimaginable"
+           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \nDon't worry, I'm going to do unimaginable "
            + "things to you. \n\nHOW EXCITING!";
            
          }

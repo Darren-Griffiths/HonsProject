@@ -46,6 +46,7 @@ public class worksheet : MonoBehaviour {
     void SetPaperText()
     {
 
-        paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nHere is a piece of paper, Use it wisely. Time is of thee essence.";
+        paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nHere is a piece of paper, Use it wisely. Time is of thee essence." + "\n1. Press ESC to unlock cursor.\n\n2.Click a field to allow entering a number."
+            + "\n\n3.After entering a value, press ENTER to save it. \n\n4.Press I to close worksheet.";
     }
 }

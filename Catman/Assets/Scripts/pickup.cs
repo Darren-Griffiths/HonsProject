@@ -278,7 +278,7 @@ public class pickup : MonoBehaviour {
         if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Equation")
         {
             //Debug.Log(hit.transform.name);
-            maincontrollerScript.objectiveText.text = "Objective: Solve the equation.";
+            maincontrollerScript.objectiveText.text = "Objective: Solve the equation. \n Press I For A Work Sheet";
         }
 
         ///Level 3
