@@ -29,6 +29,9 @@ public class StartMenu : MonoBehaviour {
     //This holds the character name from the player prefs
     public string characterName;
 
+    //This holds the chance value stored on the player prefs
+    public int chances;
+
     // Use this for initialization
     void Start()
     {
@@ -97,6 +100,8 @@ public class StartMenu : MonoBehaviour {
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 1;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
+        chances = 8;
+        PlayerPrefs.SetInt("playerChances", chances);
         characterName = "Ashley";
         PlayerPrefs.SetString("characterName", characterName);
         
@@ -108,8 +113,11 @@ public class StartMenu : MonoBehaviour {
         //Debug.Log(settingsScript.chances);
 
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
+
         characterSelection = 2;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
+        chances = 6;
+        PlayerPrefs.SetInt("playerChances", chances);
         characterName = "Daniel";
         PlayerPrefs.SetString("characterName", characterName);
     }
@@ -122,6 +130,8 @@ public class StartMenu : MonoBehaviour {
         ///This records the players selection of character and stores it in player preference file which can be accessed everywhere.
         characterSelection = 3;
         PlayerPrefs.SetInt("characterSelction", characterSelection);
+        chances = 4;
+        PlayerPrefs.SetInt("playerChances", chances);
         characterName = "Gavin";
         PlayerPrefs.SetString("characterName", characterName);
         Debug.Log("Clicked Gav");

@@ -332,6 +332,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114277537789610570, guid: e39313cf7a73e9e4fa2372b95564dc89,
+        type: 2}
+      propertyPath: chances
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e39313cf7a73e9e4fa2372b95564dc89, type: 2}
   m_IsPrefabAsset: 0
@@ -542,6 +547,16 @@ Prefab:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114842375263767616, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 114842375263767616, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
   m_IsPrefabAsset: 0
@@ -583,6 +598,10 @@ Prefab:
     - target: {fileID: 4656664390881106, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165951678412904, guid: 38995c69d383c0646b54b43275c59aad, type: 2}
+      propertyPath: m_TagString
+      value: Door2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38995c69d383c0646b54b43275c59aad, type: 2}

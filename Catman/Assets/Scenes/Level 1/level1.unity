@@ -11614,7 +11614,7 @@ Prefab:
     - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
         type: 2}
       propertyPath: chances
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
         type: 2}
@@ -11622,6 +11622,11 @@ Prefab:
       value: 
       objectReference: {fileID: 114387713992004802, guid: bf8d1bfd492c64f44ae0247d52f66221,
         type: 2}
+    - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
+        type: 2}
+      propertyPath: characterSelection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dda04d94bb374244b77ec022fca6d9a, type: 2}
   m_IsPrefabAsset: 0
@@ -11994,6 +11999,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 424740886}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &427112616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427112617}
+  m_Layer: 0
+  m_Name: Character start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427112617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427112616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.094685, y: 3.9696565, z: -32.90264}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427494335
 GameObject:
   m_ObjectHideFlags: 0
@@ -56162,6 +56195,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 174653228}
+    - target: {fileID: 114102711868004042, guid: 2208b38d4653c694c89215c410d4b8ba,
+        type: 2}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102711868004042, guid: 2208b38d4653c694c89215c410d4b8ba,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2208b38d4653c694c89215c410d4b8ba, type: 2}
   m_IsPrefabAsset: 0

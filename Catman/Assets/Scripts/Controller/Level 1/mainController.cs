@@ -60,27 +60,29 @@ public class mainController : MonoBehaviour {
         Time.timeScale = 1;
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
+        //chances = PlayerPrefs.GetInt("chances");
+        chances = PlayerPrefs.GetInt("playerChances");
 
         ///If the character selection is Ashley, the player chances are set to 8
-        if (characterSelection == 1)
-        {
-            chances = 8;
-        }
+        //if (characterSelection == 1)
+        // {
+        //    chances = 8;
+        // }
         ///If the character selection is Dude, the player chances are set to 6
-        if (characterSelection == 2)
-        {
-            chances = 6;
-        }
+        // if (characterSelection == 2)
+        // {
+        //     chances = 6;
+        // }
         ///If the character selection is Gavin, the player chances are set to 4
-        if (characterSelection == 3)
-        {
-            chances = 4;
-        }
+        // if (characterSelection == 3)
+        // {
+        //     chances = 4;
+        // }
 
         ///Inventory paper text
 
         ///Stores the players chances in player prefs
-        PlayerPrefs.SetInt("playerChances", chances);
+        //PlayerPrefs.SetInt("playerChances", chances);
 
         settingsScript = settings.GetComponent<settings>();
         SetChanceText();
@@ -97,6 +99,7 @@ public class mainController : MonoBehaviour {
 	void Update () {
 
         
+
 
         if (chances < 1)
         {
