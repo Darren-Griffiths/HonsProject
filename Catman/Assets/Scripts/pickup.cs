@@ -47,7 +47,7 @@ public class pickup : MonoBehaviour {
     public GameObject cat3;
     public GameObject cat4;
     public int objstatueDistance = 1;
-    public float statueRotate = 900f;
+    public float statueRotate = 900;
     RaycastHit door3;
     RaycastHit hit;
     RaycastHit statueHit;
@@ -57,6 +57,8 @@ public class pickup : MonoBehaviour {
     public AudioSource posTry;
     public AudioSource collectObj;
     public AudioSource nomoreTry;
+    bool statueCorrect;
+    public float cat1Rot;
 
 
     private mainController maincontrollerScript;
@@ -68,6 +70,7 @@ public class pickup : MonoBehaviour {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
         mouselookScript = mouselookObj.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+        cat1Rot = cat1.transform.rotation.z;
 
     }
 
@@ -289,7 +292,7 @@ public class pickup : MonoBehaviour {
             //Raycast for Statues
             if (Physics.Raycast(transform.position, transform.forward, out statueHit, objstatueDistance) && statueHit.collider.gameObject.tag == "Statue")
         {
-            Debug.Log("See a cat");
+            //Debug.Log("See a cat");
             pressText.enabled = true;
 
             //Statue 1
@@ -297,7 +300,14 @@ public class pickup : MonoBehaviour {
             {
                 
                 Debug.Log("Being Pressed Against A Cat");
-                cat1.transform.Rotate(0, 0, statueRotate);
+                cat1.transform.Rotate(0, 0, 90);
+                print(cat1.transform.rotation.z);
+                cat1Rot = cat1.transform.rotation.z;
+                print(cat1Rot);
+                //cat1.transform.Rotate(Vector3.right * Time.deltaTime);
+
+
+
             }
 
             //Statue 2
@@ -305,7 +315,7 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat1.transform.Rotate(0, 0, statueRotate);
+                cat2.transform.Rotate(0, 0, statueRotate);
             }
 
             //Statue 3
@@ -313,7 +323,7 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat1.transform.Rotate(0, 0, statueRotate);
+                cat3.transform.Rotate(0, 0, statueRotate);
             }
 
             //Statue 4
@@ -321,7 +331,7 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat1.transform.Rotate(0, 0, statueRotate);
+                cat4.transform.Rotate(0, 0, statueRotate);
             }
 
         }
@@ -332,18 +342,36 @@ public class pickup : MonoBehaviour {
 
         if (Physics.Raycast(transform.position, transform.forward, out door3, doorDistance) && door.collider.gameObject.tag == "Door3")
         {
-            Debug.Log("door");
+            //Debug.Log("door");
             tryText.text = "Press E To Open Door";
             tryText.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Time.timeScale = 0;
-                winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
-                " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
-                posTry.Play();
-                outcome.SetActive(true);
-                winText.SetActive(true);
-            }
+                if (cat1Rot <= 0) 
+                {
+                    print(cat1.transform.rotation.z);
+                    print(cat1Rot);
+                    Time.timeScale = 0;
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
+                    " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
+                    posTry.Play();
+                    outcome.SetActive(true);
+                    winText.SetActive(true);
+                }
+
+               else if (maincontrollerScript.chances > 0)
+               {
+                   negTry.Play();
+                   maincontrollerScript.chanceLost();
+                   print(cat1.transform.rotation.z);
+               }
+            }         
         }
+
+        //if (cat1.transform.eulerAngles.y == -270)
+        //{
+
+        //v}
+
     }
 }
