@@ -58,7 +58,10 @@ public class pickup : MonoBehaviour {
     public AudioSource collectObj;
     public AudioSource nomoreTry;
     bool statueCorrect;
-    public float cat1Rot;
+    public float cat1Rot = 0;
+    public float cat2Rot = 0;
+    public float cat3Rot = 0;
+    public float cat4Rot = 0;
 
 
     private mainController maincontrollerScript;
@@ -70,7 +73,8 @@ public class pickup : MonoBehaviour {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
         mouselookScript = mouselookObj.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
-        cat1Rot = cat1.transform.rotation.z;
+        
+        
 
     }
 
@@ -302,7 +306,7 @@ public class pickup : MonoBehaviour {
                 Debug.Log("Being Pressed Against A Cat");
                 cat1.transform.Rotate(0, 0, 90);
                 print(cat1.transform.rotation.z);
-                cat1Rot = cat1.transform.rotation.z;
+                cat1Rot = cat1Rot +1;
                 print(cat1Rot);
                 //cat1.transform.Rotate(Vector3.right * Time.deltaTime);
 
@@ -315,7 +319,10 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat2.transform.Rotate(0, 0, statueRotate);
+                cat2.transform.Rotate(0, 0, 90);
+                print(cat2.transform.rotation.z);
+                cat2Rot = cat2Rot + 1;
+                print(cat2Rot);
             }
 
             //Statue 3
@@ -323,7 +330,10 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat3.transform.Rotate(0, 0, statueRotate);
+                cat3.transform.Rotate(0, 0, 90);
+                print(cat3.transform.rotation.z);
+                cat3Rot = cat3Rot + 1;
+                print(cat3Rot);
             }
 
             //Statue 4
@@ -331,7 +341,10 @@ public class pickup : MonoBehaviour {
             {
 
                 Debug.Log("Being Pressed Against A Cat");
-                cat4.transform.Rotate(0, 0, statueRotate);
+                cat4.transform.Rotate(0, 0, 90);
+                print(cat4.transform.rotation.z);
+                cat4Rot = cat4Rot + 1;
+                print(cat4Rot);
             }
 
         }
@@ -347,7 +360,7 @@ public class pickup : MonoBehaviour {
             tryText.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (cat1Rot <= 0) 
+                if (cat1Rot == 1 && cat2Rot == 3 && cat3Rot == 0 && cat4Rot == 1) 
                 {
                     print(cat1.transform.rotation.z);
                     print(cat1Rot);
@@ -366,6 +379,24 @@ public class pickup : MonoBehaviour {
                    print(cat1.transform.rotation.z);
                }
             }         
+        }
+
+        //Int to represent 90 rotation
+        if (cat1Rot >= 4)
+        {
+            cat1Rot = 0;
+        }
+        if (cat2Rot >= 4)
+        {
+            cat2Rot = 0;
+        }
+        if (cat3Rot >= 4)
+        {
+            cat3Rot = 0;
+        }
+        if (cat4Rot >= 4)
+        {
+            cat4Rot = 0;
         }
 
         //if (cat1.transform.eulerAngles.y == -270)
