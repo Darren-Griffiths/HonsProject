@@ -9560,6 +9560,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114323044318626388, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: mouselookObj
+      value: 
+      objectReference: {fileID: 276588015}
+    - target: {fileID: 114323044318626388, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 725ad72dd93dd6a4997607ed934bd823, type: 2}
   m_IsPrefabAsset: 0
@@ -56195,16 +56205,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 174653228}
-    - target: {fileID: 114102711868004042, guid: 2208b38d4653c694c89215c410d4b8ba,
+    - target: {fileID: 114994462436002526, guid: 2208b38d4653c694c89215c410d4b8ba,
         type: 2}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 114102711868004042, guid: 2208b38d4653c694c89215c410d4b8ba,
-        type: 2}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2208b38d4653c694c89215c410d4b8ba, type: 2}
   m_IsPrefabAsset: 0

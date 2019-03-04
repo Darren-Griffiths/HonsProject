@@ -38,7 +38,7 @@ public class pickup : MonoBehaviour {
     public GameObject keypadInput;
     public Text keypadpressText;
     RaycastHit door2;
-    public GameObject mouselookObj;
+    public GameObject MouseLook;
     private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
 
     //Level 3 Declare
@@ -72,9 +72,9 @@ public class pickup : MonoBehaviour {
     {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
-        mouselookScript = mouselookObj.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
-        
-        
+        mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+
+
 
     }
 
@@ -93,13 +93,14 @@ public class pickup : MonoBehaviour {
             {
                 if (bc1Text.enabled == true)
                 {
+                    
                     posTry.Play();
                     Time.timeScale = 0;
                     outcome.SetActive(true);
                     winText.SetActive(true);
                     winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
                     "We are done here press ESC....";
-                    mouselookScript.m_cursorIsLocked = false;
+                    
                 }
                 else if (maincontrollerScript.chances > 0)
                 {
@@ -239,9 +240,10 @@ public class pickup : MonoBehaviour {
             //Keypad
             if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.name == "Keypad")
             {
-             Debug.Log("Keypad is being pressed");
-             mouselookScript.m_cursorIsLocked = false;
-             //GameObject.Find("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
+                Debug.Log("Keypad is being pressed");
+                mouselookScript.m_cursorIsLocked = false;
+                Time.timeScale = 0;
+                //GameObject.Find("Player").GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = false;
                 keypadpressText.text = ("Click To Input Your Answer & Press Enter To Save It");
                 keypadInput.SetActive(true);
             }
@@ -269,6 +271,7 @@ public class pickup : MonoBehaviour {
                     posTry.Play();
                     outcome.SetActive(true);
                     winText.SetActive(true);
+                    
                 }
                 else if (maincontrollerScript.keypadInput.text != "554")
                 {
@@ -370,6 +373,7 @@ public class pickup : MonoBehaviour {
                     posTry.Play();
                     outcome.SetActive(true);
                     winText.SetActive(true);
+                    
                 }
 
                else if (maincontrollerScript.chances > 0)

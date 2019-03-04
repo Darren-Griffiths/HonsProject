@@ -74,26 +74,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
-            if (Input.GetKeyUp(KeyCode.Escape))
-            {
-                m_cursorIsLocked = false;
-               
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                m_cursorIsLocked = true;
-            }
-
+            
             if (m_cursorIsLocked)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                XSensitivity = 2f;
+                YSensitivity = 2f;
 
             }
             else if (!m_cursorIsLocked)
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                XSensitivity = 0f;
+                YSensitivity = 0f;
             }
         }
 
@@ -118,7 +113,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Time.timeScale == 0)
             {
                 Time.timeScale = 1;
-                
             }
 
             else if (Time.timeScale == 1)

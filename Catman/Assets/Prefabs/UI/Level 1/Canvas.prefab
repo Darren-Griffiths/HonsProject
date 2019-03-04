@@ -971,7 +971,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2113,6 +2113,7 @@ MonoBehaviour:
   inventoryPosition: {x: 0, y: 0, z: 0}
   paperText: {fileID: 114739775788192170}
   StartMenu: {fileID: 1436371350941162, guid: b25c611241f3620408e22f898195eb82, type: 2}
+  MouseLook: {fileID: 0}
 --- !u!222 &222026529110701616
 CanvasRenderer:
   m_ObjectHideFlags: 1

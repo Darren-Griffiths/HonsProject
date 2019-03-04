@@ -61,7 +61,7 @@ public class mainController : MonoBehaviour {
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
         //chances = PlayerPrefs.GetInt("chances");
-        //PlayerPrefs.SetInt("playerChances", 900);
+        PlayerPrefs.SetInt("playerChances", 900);
         chances = PlayerPrefs.GetInt("playerChances");
 
         ///If the character selection is Ashley, the player chances are set to 8
@@ -98,9 +98,6 @@ public class mainController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        
-
 
         if (chances < 1)
         {
