@@ -24,9 +24,8 @@ public class Inventory : MonoBehaviour {
         show = false;
         ESC = false;
         transform.localPosition = new Vector3(0, 9000, 0);
-        print(transform.localPosition.y);
-        print(show);
-
+        //print(transform.localPosition.y);
+        //print(show);
 
         ///Inventory paper text
         SetPaperText();
@@ -37,7 +36,7 @@ public class Inventory : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.I) && show == false)
         {
-            Debug.Log("Pressed I To Show INV This script is active");
+            //Debug.Log("Pressed I To Show INV This script is active");
             transform.localPosition = new Vector3(0, 0, 0);
             show = true;
             print(transform.localPosition.y);
@@ -47,7 +46,7 @@ public class Inventory : MonoBehaviour {
 
         else if (Input.GetKeyDown(KeyCode.I) && show == true)
         {
-            Debug.Log("Pressed I To Show INV");
+            //Debug.Log("Pressed I To Show INV");
             transform.localPosition = new Vector3(0, 9000, 0);
             show = false;
             print(transform.localPosition.y);
@@ -74,7 +73,7 @@ public class Inventory : MonoBehaviour {
     void SetPaperText()
     {
 
-        paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nI have been watching you, for so long I have been wanting you.Now I have you, II feel so guilty for taken you." +
-        "It pains me to think you don't want me. So heres the deal" + PlayerPrefs.GetString("characterName") + ", I will give you NINE chances to show me you want me...except from the once chance I have just giving you to show me you truely dont care.";
+        paperText.text = PlayerPrefs.GetString("characterName") + ",\n\nI have been watching you. \nfor so long I have been wanting you. \nNow that I have you.\nI feel so guilty for taken you." +
+        "\nIt pains me to think you don't want me.\n\nSo heres the deal, \n\nI will give you NINE chances to show me that you want me too...\nminus the one chance I have just giving you.";
     }
 }
