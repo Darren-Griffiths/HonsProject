@@ -5404,6 +5404,11 @@ Prefab:
       propertyPath: statueRotate
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114854413659431776, guid: 9daac4034924d0840ba5e338c0b46fd3,
+        type: 2}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9daac4034924d0840ba5e338c0b46fd3, type: 2}
   m_IsPrefabAsset: 0

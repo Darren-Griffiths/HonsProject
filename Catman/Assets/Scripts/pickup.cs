@@ -96,6 +96,7 @@ public class pickup : MonoBehaviour {
                     
                     posTry.Play();
                     Time.timeScale = 0;
+                    mouselookScript.m_cursorIsLocked = false;
                     outcome.SetActive(true);
                     winText.SetActive(true);
                     winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
@@ -266,6 +267,7 @@ public class pickup : MonoBehaviour {
                 if (maincontrollerScript.keypadInput.text == "554")
                 {
                     Time.timeScale = 0;
+                    mouselookScript.m_cursorIsLocked = false;
                     winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
                     posTry.Play();
@@ -368,12 +370,15 @@ public class pickup : MonoBehaviour {
                     print(cat1.transform.rotation.z);
                     print(cat1Rot);
                     Time.timeScale = 0;
+                    mouselookScript.m_cursorIsLocked = false;
                     winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
                     posTry.Play();
                     outcome.SetActive(true);
+                    print ("got here");
                     winText.SetActive(true);
-                    
+                    print("got here 2");
+                    print("got here 3");
                 }
 
                else if (maincontrollerScript.chances > 0)
