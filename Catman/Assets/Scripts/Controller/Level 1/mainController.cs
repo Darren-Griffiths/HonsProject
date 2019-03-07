@@ -36,6 +36,9 @@ public class mainController : MonoBehaviour {
     private settings settingsScript;
     public GameObject settings;
 
+    private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
+    public GameObject MouseLook;
+
 
 
 
@@ -58,10 +61,14 @@ public class mainController : MonoBehaviour {
     {
 
         Time.timeScale = 1;
+
+        mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+
+
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
         characterSelection = PlayerPrefs.GetInt("characterSelction");
         //chances = PlayerPrefs.GetInt("chances");
-        PlayerPrefs.SetInt("playerChances", 900);
+        PlayerPrefs.SetInt("playerChances", 1);
         chances = PlayerPrefs.GetInt("playerChances");
 
         ///If the character selection is Ashley, the player chances are set to 8
@@ -104,9 +111,10 @@ public class mainController : MonoBehaviour {
 
            chances = 0;
            Time.timeScale = 0;
-           outcome.SetActive(true);
+           mouselookScript.m_cursorIsLocked = false;
+            outcome.SetActive(true);
            lossText.SetActive(true);
-           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \nDon't worry, I'm going to do unimaginable "
+           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \n\nDon't worry, I'm going to do unimaginable "
            + "things to you. \n\nHOW EXCITING!";
            
          }

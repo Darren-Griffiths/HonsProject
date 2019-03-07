@@ -7182,6 +7182,11 @@ Prefab:
       propertyPath: chances
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114072238673881608, guid: fd3bf2fd547efad49b5e09c881f8f7d5,
+        type: 2}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd3bf2fd547efad49b5e09c881f8f7d5, type: 2}
   m_IsPrefabAsset: 0

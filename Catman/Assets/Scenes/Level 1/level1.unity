@@ -1675,6 +1675,11 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
+        type: 2}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dda04d94bb374244b77ec022fca6d9a, type: 2}
   m_IsPrefabAsset: 0

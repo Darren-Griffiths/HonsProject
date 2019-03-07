@@ -394,6 +394,11 @@ Prefab:
       propertyPath: lossText
       value: 
       objectReference: {fileID: 1800543913}
+    - target: {fileID: 114188872015385498, guid: 8f8d498d6fcbcfa47a80e303b5334fef,
+        type: 2}
+      propertyPath: MouseLook
+      value: 
+      objectReference: {fileID: 276588015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f8d498d6fcbcfa47a80e303b5334fef, type: 2}
   m_IsPrefabAsset: 0
