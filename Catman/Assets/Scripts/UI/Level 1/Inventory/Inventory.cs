@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour {
         startmenuScript = StartMenu.GetComponent<StartMenu>();
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
         ESC = false;
+        Time.timeScale = 0;
         //print(transform.localPosition.y);
         //print(show);
 
@@ -90,7 +91,7 @@ public class Inventory : MonoBehaviour {
         show = false;
         transform.localPosition = new Vector3(0, 0, 9000);
         mouselookScript.m_cursorIsLocked = true;
-        startGame.SetActive(false); 
-
+        startGame.SetActive(false);
+        Time.timeScale = 1;
     }
 }

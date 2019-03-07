@@ -130,8 +130,8 @@ public class pickup : MonoBehaviour {
 
         
 
-        //Raycast for Boltcutter
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2) && hit.collider.gameObject.tag == "Key Object")
+        //Raycast for Key Objects
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 3) && hit.collider.gameObject.tag == "Key Object")
         {
             //Debug.Log(hit.transform.name);
             pickupText.enabled = true;
