@@ -99,8 +99,7 @@ public class pickup : MonoBehaviour {
                     mouselookScript.m_cursorIsLocked = false;
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances. Why don't you wanna stay...with me?\n\n\n\n\n\n\n"+
-                    "We are done here press ESC....";
+                    winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances remaining. Why don't you wanna stay...with me?";
                     
                 }
                 else if (maincontrollerScript.chances > 0)
@@ -269,7 +268,7 @@ public class pickup : MonoBehaviour {
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
                     winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
-                    " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
+                    " chances remaining. \n\n\n\nWhy don't you wanna STAY WITH ME!?";
                     posTry.Play();
                     outcome.SetActive(true);
                     winText.SetActive(true);
@@ -372,7 +371,7 @@ public class pickup : MonoBehaviour {
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
                     winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
-                    " chances. \n\n\n\nWhy don't you wanna STAY WITH ME!?" + "\n\nWe are done here press ESC....";
+                    " chances remaining. \n\n\n\nYou really, really don't wanna stay?";
                     posTry.Play();
                     outcome.SetActive(true);
                     print ("got here");
