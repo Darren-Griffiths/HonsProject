@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour {
 
     public GameObject startGame;
 
+    public GameObject pauseMenu;
+
     // Use this for initialization
     void Start ()
     {
@@ -61,6 +63,7 @@ public class Inventory : MonoBehaviour {
             ESC = true;
             mouselookScript.m_cursorIsLocked = false;
             Time.timeScale = 0;
+            pauseMenu.SetActive(true);
 
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && ESC == true)
@@ -69,6 +72,7 @@ public class Inventory : MonoBehaviour {
             ESC = false;
             mouselookScript.m_cursorIsLocked = true;
             Time.timeScale = 1;
+            pauseMenu.SetActive(false);
         }
     }
 
@@ -93,5 +97,15 @@ public class Inventory : MonoBehaviour {
         mouselookScript.m_cursorIsLocked = true;
         startGame.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void resumeClick()
+    {
+        print(ESC);
+        ESC = false;
+        mouselookScript.m_cursorIsLocked = true;
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+        startGame.SetActive(false);
     }
 }

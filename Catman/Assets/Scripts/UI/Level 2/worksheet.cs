@@ -12,6 +12,8 @@ public class worksheet : MonoBehaviour {
     private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
     public GameObject MouseLook;
 
+    public GameObject pauseMenu;
+
     // Use this for initialization
     void Start (){
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
@@ -54,6 +56,7 @@ public class worksheet : MonoBehaviour {
             ESC = true;
             mouselookScript.m_cursorIsLocked = false;
             Time.timeScale = 0;
+            pauseMenu.SetActive(true);
 
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && ESC == true)
@@ -62,6 +65,7 @@ public class worksheet : MonoBehaviour {
             ESC = false;
             mouselookScript.m_cursorIsLocked = true;
             Time.timeScale = 1;
+            pauseMenu.SetActive(false);
         }
 
 
