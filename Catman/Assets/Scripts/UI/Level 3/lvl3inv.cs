@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class lvl3inv : MonoBehaviour {
 
@@ -10,6 +11,15 @@ public class lvl3inv : MonoBehaviour {
     bool ESC;
     private UnityStandardAssets.Characters.FirstPerson.MouseLook mouselookScript;
     public GameObject MouseLook;
+
+    public GameObject pauseMenu;
+    public GameObject resumeButton;
+    public GameObject optionsButton;
+    public GameObject backButton;
+    public GameObject exitButton;
+
+    public AudioMixer masterMixer;
+    public GameObject audioMenu;
 
     // Use this for initialization
     void Start()
@@ -54,6 +64,7 @@ public class lvl3inv : MonoBehaviour {
             print(ESC);
             ESC = true;
             mouselookScript.m_cursorIsLocked = false;
+            pauseMenu.SetActive(true);
             Time.timeScale = 0;
 
         }
@@ -62,6 +73,7 @@ public class lvl3inv : MonoBehaviour {
             print(ESC);
             ESC = false;
             mouselookScript.m_cursorIsLocked = true;
+            pauseMenu.SetActive(false);
             Time.timeScale = 1;
         }
 
@@ -71,5 +83,53 @@ public class lvl3inv : MonoBehaviour {
     void setpapertextwithNoClue()
     {
         paperText.text = PlayerPrefs.GetString("characterName") + ", \n\nYou should have explored more to see that everything should be set straight.";
+    }
+
+    public void resumeClick()
+    {
+        print(ESC);
+        ESC = false;
+        mouselookScript.m_cursorIsLocked = true;
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+    }
+
+    public void optionsClick()
+    {
+        //Hide these buttons
+        resumeButton.SetActive(false);
+        optionsButton.SetActive(false);
+        exitButton.SetActive(false);
+        //Show these buttons
+        audioMenu.SetActive(true);
+        backButton.SetActive(true);
+    }
+
+    public void backClick()
+    {
+        //Show these buttons
+        resumeButton.SetActive(true);
+        optionsButton.SetActive(true);
+        exitButton.SetActive(true);
+        //Hide these buttons
+        audioMenu.SetActive(false);
+        backButton.SetActive(false);
+    }
+
+    public void exitClick()
+    {
+        Application.Quit();
+    }
+
+    //Slider controls the music volume
+    public void SetMusicLvl(float musicLvl)
+    {
+        masterMixer.SetFloat("musicVol", musicLvl);
+    }
+
+    //Slider controls the sfx volume
+    public void SetSoundFXLvl(float sfxLvl)
+    {
+        masterMixer.SetFloat("sfxVol", sfxLvl);
     }
 }
