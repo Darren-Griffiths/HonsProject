@@ -64,6 +64,7 @@ public class pickup : MonoBehaviour {
     public float cat4Rot = 0;
 
 
+
     private mainController maincontrollerScript;
     private settings settingsScript;
     public GameObject settings;
@@ -73,9 +74,6 @@ public class pickup : MonoBehaviour {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
-
-
-
     }
 
     void Update()
@@ -272,7 +270,6 @@ public class pickup : MonoBehaviour {
                     posTry.Play();
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    
                 }
                 else if (maincontrollerScript.keypadInput.text != "554")
                 {

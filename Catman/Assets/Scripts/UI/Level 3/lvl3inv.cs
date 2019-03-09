@@ -64,8 +64,8 @@ public class lvl3inv : MonoBehaviour {
             print(ESC);
             ESC = true;
             mouselookScript.m_cursorIsLocked = false;
-            pauseMenu.SetActive(true);
             Time.timeScale = 0;
+            pauseMenu.SetActive(true);
 
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && ESC == true)
@@ -73,8 +73,8 @@ public class lvl3inv : MonoBehaviour {
             print(ESC);
             ESC = false;
             mouselookScript.m_cursorIsLocked = true;
-            pauseMenu.SetActive(false);
             Time.timeScale = 1;
+            pauseMenu.SetActive(false);
         }
 
 

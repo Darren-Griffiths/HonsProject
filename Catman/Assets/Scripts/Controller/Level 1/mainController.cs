@@ -63,6 +63,7 @@ public class mainController : MonoBehaviour {
         Time.timeScale = 1;
 
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+        
 
 
         ///Links the character selection in player prefs to a public int to which can be altered via script or editor
@@ -114,7 +115,7 @@ public class mainController : MonoBehaviour {
            mouselookScript.m_cursorIsLocked = false;
             outcome.SetActive(true);
            lossText.SetActive(true);
-           losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \n\nDon't worry, I'm going to do unimaginable "
+            losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \n\nDon't worry, I'm going to do unimaginable "
            + "things to you. \n\nHOW EXCITING!";
            
          }

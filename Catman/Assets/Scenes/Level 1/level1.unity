@@ -1695,6 +1695,11 @@ Prefab:
       propertyPath: MouseLook
       value: 
       objectReference: {fileID: 276588015}
+    - target: {fileID: 114131289855712552, guid: 1dda04d94bb374244b77ec022fca6d9a,
+        type: 2}
+      propertyPath: pickupS
+      value: 
+      objectReference: {fileID: 1463779022}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dda04d94bb374244b77ec022fca6d9a, type: 2}
   m_IsPrefabAsset: 0
@@ -4482,6 +4487,11 @@ Transform:
   m_Father: {fileID: 346293682}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1463779022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1905324078403064, guid: 725ad72dd93dd6a4997607ed934bd823,
+    type: 2}
+  m_PrefabInternal: {fileID: 342364529}
 --- !u!1 &1468829219
 GameObject:
   m_ObjectHideFlags: 0

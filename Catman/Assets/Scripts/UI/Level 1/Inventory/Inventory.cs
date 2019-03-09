@@ -28,6 +28,8 @@ public class Inventory : MonoBehaviour {
     public AudioMixer masterMixer;
     public GameObject audioMenu;
 
+    private pickup pickupScript;
+
 
     // Use this for initialization
     void Start ()
@@ -35,6 +37,7 @@ public class Inventory : MonoBehaviour {
         startmenuScript = StartMenu.GetComponent<StartMenu>();
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
         ESC = false;
+
         Time.timeScale = 0;
         //print(transform.localPosition.y);
         //print(show);
