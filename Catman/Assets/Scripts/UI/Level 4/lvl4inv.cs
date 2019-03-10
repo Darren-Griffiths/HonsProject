@@ -24,13 +24,17 @@ public class lvl4inv : MonoBehaviour {
     public GameObject audioMenu;
 
     private pickup pickupScript;
+    private mainController maincontrollerScript;
+    public GameObject controller;
 
 
     // Use this for initialization
     void Start()
     {
+        maincontrollerScript = controller.GetComponent<mainController>();
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
         ESC = false;
+        maincontrollerScript.objectiveText.text = "Objective: If you can find the way out then you can leave.";
         //print(transform.localPosition.y);
         //print(show);
 

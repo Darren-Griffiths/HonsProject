@@ -101,7 +101,7 @@ public class pickup : MonoBehaviour {
                     mouselookScript.m_cursorIsLocked = false;
                     outcome.SetActive(true);
                     winText.SetActive(true);
-                    winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances remaining. Why don't you wanna stay...with me?";
+                    winnerText.text = PlayerPrefs.GetString("characterName")+ ",\n\n\nYou have successfully passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances remaining. Why don't you wanna stay...with me?";
                 }
                 else if (maincontrollerScript.chances > 0)
                 {
@@ -268,7 +268,7 @@ public class pickup : MonoBehaviour {
                 {
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
-                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successfully passed the second challenge with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances remaining. \n\n\n\nWhy don't you wanna STAY WITH ME!?";
                     posTry.Play();
                     outcome.SetActive(true);
@@ -370,7 +370,7 @@ public class pickup : MonoBehaviour {
                     print(cat1Rot);
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
-                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successfully passed the third challenge with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances remaining. \n\n\n\nYou really, really don't wanna stay?";
                     posTry.Play();
                     outcome.SetActive(true);
@@ -419,14 +419,14 @@ public class pickup : MonoBehaviour {
             //Debug.Log("door");
             tryText.text = "Press E To Open Door";
             tryText.enabled = true;
+            maincontrollerScript.objectiveText.text = "Objective: You are free to leave this place.";
             if (Input.GetKeyDown(KeyCode.E))
             {
-                    if(freetoGo == true){ 
-                    print(cat1.transform.rotation.z);
-                    print(cat1Rot);
+                    if(freetoGo == true)
+                    { 
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
-                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed all challenges with (" + maincontrollerScript.chances.ToString() + ")" +
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successfully passed all challenges with (" + maincontrollerScript.chances.ToString() + ")" +
                     " chances remaining. \n\n\n\nYou are free to go. I am really sorry for everything I have done to you. Please, you will never have to worry about me again, nobody will.";
                     posTry.Play();
                     outcome.SetActive(true);
@@ -434,7 +434,7 @@ public class pickup : MonoBehaviour {
                     winText.SetActive(true);
                     print("got here 2");
                     print("got here 3");
-                }
+                    }
 
                 else if (maincontrollerScript.chances > 0)
                 {
