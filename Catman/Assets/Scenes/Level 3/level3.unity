@@ -7167,7 +7167,7 @@ Prefab:
         type: 2}
       propertyPath: losserText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 351761650}
     - target: {fileID: 114072238673881608, guid: fd3bf2fd547efad49b5e09c881f8f7d5,
         type: 2}
       propertyPath: winText
@@ -10120,7 +10120,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 476, y: 528}
+  m_SizeDelta: {x: 500, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618250955
 MonoBehaviour:

@@ -19140,7 +19140,7 @@ Prefab:
     - target: {fileID: 114926797695281470, guid: 3959e73f42013194095d5f2b00dd4a38,
         type: 2}
       propertyPath: m_FontData.m_LineSpacing
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114609108231563908, guid: 3959e73f42013194095d5f2b00dd4a38,
         type: 2}
@@ -19178,6 +19178,31 @@ Prefab:
       propertyPath: audioMenu
       value: 
       objectReference: {fileID: 1040492876}
+    - target: {fileID: 224790040852100604, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224790040852100604, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224790040852100604, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224790040852100604, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 224790040852100604, guid: 3959e73f42013194095d5f2b00dd4a38,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 750
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3959e73f42013194095d5f2b00dd4a38, type: 2}
   m_IsPrefabAsset: 0

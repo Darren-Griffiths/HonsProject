@@ -115,8 +115,8 @@ public class mainController : MonoBehaviour {
            mouselookScript.m_cursorIsLocked = false;
             outcome.SetActive(true);
            lossText.SetActive(true);
-            losserText.text = PlayerPrefs.GetString("characterName") + ", \n\n I gave you chances to leave, but you have decided to stay, for me!\n\nwell, I do feel privileged. \n\nDon't worry, I'm going to do unimaginable "
-           + "things to you. \n\nHOW EXCITING!";
+            losserText.text = PlayerPrefs.GetString("characterName") + ", \n\nI gave you chances to leave, but you have decided to stay, for me!\nwell, I do feel privileged. \n\nDon't worry, I'm going to do unimaginable "
+           + "things to you. \nHOW EXCITING!";
            
          }
     }
