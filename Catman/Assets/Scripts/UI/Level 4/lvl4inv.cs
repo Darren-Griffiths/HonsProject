@@ -31,8 +31,6 @@ public class lvl4inv : MonoBehaviour {
     {
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
         ESC = false;
-
-        Time.timeScale = 0;
         //print(transform.localPosition.y);
         //print(show);
 

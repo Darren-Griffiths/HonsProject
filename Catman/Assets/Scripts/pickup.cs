@@ -49,6 +49,7 @@ public class pickup : MonoBehaviour {
     public int objstatueDistance = 1;
     public float statueRotate = 900;
     RaycastHit door3;
+    RaycastHit door4;
     RaycastHit hit;
     RaycastHit statueHit;
     RaycastHit door;
@@ -63,6 +64,8 @@ public class pickup : MonoBehaviour {
     public float cat3Rot = 0;
     public float cat4Rot = 0;
 
+    public bool freetoGo;
+
 
 
     private mainController maincontrollerScript;
@@ -74,6 +77,8 @@ public class pickup : MonoBehaviour {
         maincontrollerScript = controller.GetComponent<mainController>();
         settingsScript = settings.GetComponent<settings>();
         mouselookScript = MouseLook.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>();
+
+        freetoGo = true;
     }
 
     void Update()
@@ -91,14 +96,12 @@ public class pickup : MonoBehaviour {
             {
                 if (bc1Text.enabled == true)
                 {
-                    
                     posTry.Play();
                     Time.timeScale = 0;
                     mouselookScript.m_cursorIsLocked = false;
                     outcome.SetActive(true);
                     winText.SetActive(true);
                     winnerText.text = PlayerPrefs.GetString("characterName")+",\n You have successively passed the first challege with (" + maincontrollerScript.chances.ToString() + ") chances remaining. Why don't you wanna stay...with me?";
-                    
                 }
                 else if (maincontrollerScript.chances > 0)
                 {
@@ -409,5 +412,37 @@ public class pickup : MonoBehaviour {
 
         //v}
 
+        //Level 4
+
+        if (Physics.Raycast(transform.position, transform.forward, out door4, doorDistance) && door.collider.gameObject.tag == "Door4")
+        {
+            //Debug.Log("door");
+            tryText.text = "Press E To Open Door";
+            tryText.enabled = true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                    if(freetoGo == true){ 
+                    print(cat1.transform.rotation.z);
+                    print(cat1Rot);
+                    Time.timeScale = 0;
+                    mouselookScript.m_cursorIsLocked = false;
+                    winnerText.text = PlayerPrefs.GetString("characterName") + ",\n\n\nYou have successively passed all challenges with (" + maincontrollerScript.chances.ToString() + ")" +
+                    " chances remaining. \n\n\n\nYou are free to go. I am really sorry for everything I have done to you. Please, you will never have to worry about me again, nobody will.";
+                    posTry.Play();
+                    outcome.SetActive(true);
+                    print("got here");
+                    winText.SetActive(true);
+                    print("got here 2");
+                    print("got here 3");
+                }
+
+                else if (maincontrollerScript.chances > 0)
+                {
+                    negTry.Play();
+                    maincontrollerScript.chanceLost();
+                    print(cat1.transform.rotation.z);
+                }
+            }
+        }
     }
 }
