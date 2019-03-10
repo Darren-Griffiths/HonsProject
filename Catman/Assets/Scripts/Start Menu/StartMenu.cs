@@ -178,6 +178,11 @@ public class StartMenu : MonoBehaviour {
         audioMenu.SetActive(false);
     }
 
+    //This function will listen for a click on the exit button and then will close application.
+    public void mainmenuOnClick()
+    {
+        SceneManager.LoadScene("startMenu");
+    }
 
     //This function will listen for a click on the exit button and then will close application.
     public void ExitOnClick()
