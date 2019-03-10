@@ -125,7 +125,7 @@ public class pickup : MonoBehaviour {
         {
    
             {
-             objectiveText.text = "Objective: Well Done, you have found the door. Find tools to try the lock";
+             objectiveText.text = "Objective: Well Done, you have found the door. Find tools to try the lock";    
             }
         }
 

@@ -91,8 +91,8 @@ public class Inventory : MonoBehaviour {
     void SetPaperText()
     {
 
-        paperText.text = PlayerPrefs.GetString("characterName") + ",\n\nI have been watching you. \nfor so long I have been wanting you. \nNow that I have you.\nI feel so guilty for taken you." +
-        "\nIt pains me to think you don't want me.\n\nSo heres the deal, \n\nI will give you NINE chances to show me that you want me too...\nminus the one chance I have just giving you.";
+        paperText.text = PlayerPrefs.GetString("characterName") + ",\n\nI have been watching you. \nfor so long I have been wanting you. \nNow that I have you.\nI feel so guilty for taking you." +
+        "\nIt pains me to think you don't want me.\n\nSo heres the deal, \n\nI will give you NINE chances to show me that you want me too...\nminus the one chance I have just given you.";
     }
 
     void startTrigger()

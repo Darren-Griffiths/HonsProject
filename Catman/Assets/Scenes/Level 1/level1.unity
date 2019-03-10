@@ -1430,6 +1430,30 @@ Prefab:
       propertyPath: MouseLook
       value: 
       objectReference: {fileID: 276588015}
+    - target: {fileID: 82796991608735742, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82257960112636300, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82054355539675870, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82202400483129344, guid: 725ad72dd93dd6a4997607ed934bd823,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 725ad72dd93dd6a4997607ed934bd823, type: 2}
   m_IsPrefabAsset: 0
@@ -2062,11 +2086,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I have scattered tools in this warehouse....\nif can find the exit + the
-    required tool to leave, then do so. \n\nGiven you have any chances left ! \n\nI
-    have equiped you with headgear to monitor your progress,  chances (TOP LEFT) and
-    current objective (TOP RIGHT). How thoughtful of me. \nDo attempt to take this
-    off. \n\t\t\t\t\t\t\t\t\t\tIt will kill you."
+  m_Text: "I have scattered tools in this warehouse....\nif you can find the exit
+    + the required tool to leave, then do so. \n\nGiven that you have any chances
+    left ! \n\nI have equiped you with headgear to monitor your progress,  chances
+    (TOP LEFT) and current objective (TOP RIGHT). How thoughtful of me. \nDo not attempt
+    to take this off. \n\t\t\t\t\t\t\t\t\t\tIt will kill you."
 --- !u!222 &488877632
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3275,6 +3299,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -513.9
       objectReference: {fileID: 0}
+    - target: {fileID: 23143985542471964, guid: af4ae0847e0906144b0c4d648b862e70,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23c74c84f23001b4d8234b2603c61508, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af4ae0847e0906144b0c4d648b862e70, type: 2}
   m_IsPrefabAsset: 0

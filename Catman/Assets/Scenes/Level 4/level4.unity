@@ -2365,7 +2365,7 @@ Light:
   m_Color: {r: 0.853, g: 0.947962, b: 1, a: 1}
   m_Intensity: 0.5
   m_Range: 100
-  m_SpotAngle: 150
+  m_SpotAngle: 168.4
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -7430,7 +7430,7 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2075880642}
-  m_Text: The world knows of my fathger
+  m_Text: The world knows of my father
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

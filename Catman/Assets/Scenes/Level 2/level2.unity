@@ -20593,6 +20593,30 @@ Prefab:
       propertyPath: MouseLook
       value: 
       objectReference: {fileID: 1445318262}
+    - target: {fileID: 82361554856855700, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82753888273016282, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82631715348331986, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
+    - target: {fileID: 82777325460661112, guid: 4ef539dd583fc024fb09b067643c2191,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243064626460923384, guid: 342222aaa0c848e4ebfaf642f6ea0989,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ef539dd583fc024fb09b067643c2191, type: 2}
   m_IsPrefabAsset: 0
